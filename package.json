@@ -1,0 +1,30 @@
+{
+  "name": "wallstrat",
+  "version": "1.0.0",
+  "license": "wallstrat@2018",
+  "description": "Cryptocurrency Market Data API",
+  "homepage": "https://www.wallstart.com",
+  "main":"dist/marketData/main/index.js",
+  "types": "main/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -w",
+    "start": "concurrently \"tsc -w\" \"nodemon dist/marketData/test/test.js\"",
+    "prepare": "concurrently \"tsc -w\" \"nodemon dist/marketData/test/test.js\"",
+    "startServer": "node dist/marketData/test/test.js"
+  },
+  "dependencies": {
+    "bottleneck": "^2.5.0",
+    "express": "^4.16.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/node": "^10.5.2",
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.5",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
+  }
+}

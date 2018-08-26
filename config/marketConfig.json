@@ -1,0 +1,4300 @@
+{
+	"gdax":{
+		"publicEndpoint": "https://api.pro.coinbase.com/",
+		"privateEndpoint":"",
+		"currencies": {
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["BTC-USD", "BTC-EUR", "BTC-GBP"]
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["BCH-USD","BCH-EUR","BCH-BTC" ]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ETH-USD","ETH-EUR","ETH-BTC" ]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["LTC-USD","LTC-EUR","LTC-BTC" ]
+			}
+		},
+		"primecurrencies": {
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["BTC-USD"]
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["BCH-USD"]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ETH-USD"]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["LTC-USD"]
+			}
+		}  
+	},
+	"binance":{
+		"publicEndpoint": "https://api.binance.com/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"VeChainThor": {
+				"id" : "VET",
+				"currencyPairs":["VETBTC", "VETETH", "VETUSDT", "VETBNB"]
+			},
+			"Holo": {
+				"id" : "HOT",
+				"currencyPairs":["HOTBTC", "HOTETH"]
+			},
+			"Ardor": {
+				"id" : "ARDR",
+				"currencyPairs":["ARDRBTC", "ARDRETH", "ARDRBNB"]
+			},
+			"Dent": {
+				"id" : "DENT",
+				"currencyPairs":["DENTBTC", "DENTETH"]
+			},
+			"Mainframe": {
+				"id" : "MFT",
+				"currencyPairs":["MFTBTC", "MFTBNB", "MFTETH"]
+			},
+			"Nebulas": {
+				"id" : "NAS",
+				"currencyPairs":["NASBTC", "NASETH", "NASBNB"]
+			},
+			"SelfKey": {
+				"id" : "KEY",
+				"currencyPairs":["KEYBTC", "KEYETH"]
+			},
+			"Pundi X": {
+				"id" : "NPXS",
+				"currencyPairs":["NPXSBTC", "NPXSETH"]
+			},
+			"SiaCoin": {
+				"id" : "SC",
+				"currencyPairs":["SCBTC", "SCETH", "SCBNB"]
+			},
+			"Streamr": {
+				"id" : "DATA",
+				"currencyPairs":["DATABTC", "DATAETH"]
+			},
+			"Nexus": {
+				"id" : "NXS",
+				"currencyPairs":["NXSBTC", "NXSETH", "NXSBNB"]
+			},
+			"SingularityNET": {
+				"id" : "AGI",
+				"currencyPairs":["AGIBTC", "AGIETH", "AGIBNB"]
+			},
+			"QuarkChain": {
+				"id" : "QKC",
+				"currencyPairs":["QKCBTC", "QKCETH"]
+			},
+			"IoTex": {
+				"id" : "IOTX",
+				"currencyPairs":["IOTXBTC", "IOTXETH"]
+			},
+			"Theta Token": {
+				"id" : "THETA",
+				"currencyPairs":["THETABTC", "THETAETH", "THETABNB"]
+			},
+			"Civic": {
+				"id" : "CVC",
+				"currencyPairs":["CVCBTC", "CVCETH", "CVCBNB"]
+			},
+			"SkyCoin": {
+				"id" : "SKY",
+				"currencyPairs":["SKYBTC", "SKYETH", "SKYBNB"]
+			},
+			"ZenCash": {
+				"id" : "ZEN",
+				"currencyPairs":["ZENBTC", "ZENETH", "ZENBNB"]
+			},
+			"TrueUSD": {
+				"id" : "TUSD",
+				"currencyPairs":["TUSDBTC", "TUSDETH", "TUSDBNB","TUSDUSDT"]
+			},
+			"Augur": {
+				"id" : "REP",
+				"currencyPairs":["REPBTC", "REPETH", "REPBNB"]
+			},
+			"ByteCoin": {
+				"id" : "BCN",
+				"currencyPairs":["BCNBTC", "BCNETH", "BCNBNB"]
+			},
+			"Loom": {
+				"id" : "LOOM",
+				"currencyPairs":["LOOMBTC", "LOOMETH", "LOOMBNB"]
+			},
+			"Golem": {
+				"id" : "GNT",
+				"currencyPairs":["GNTBTC", "GNTETH"]
+			},
+			"CloakCoin": {
+				"id" : "CLOAK",
+				"currencyPairs":["CLOAKBTC", "CLOAKETH"]
+			},
+			"Groestlcoin": {
+				"id" : "GRS",
+				"currencyPairs":["GRSBTC", "GRSETH", "GNTBNB"]
+			},
+			"SysCoin": {
+				"id" : "SYS",
+				"currencyPairs":["SYSBTC", "SYSETH", "SYSBNB"]
+			},
+			"QLink": {
+				"id" : "QLC",
+				"currencyPairs":["QLCBTC", "QLCETH", "QLCBNB"]
+			},
+			"WePower": {
+				"id" : "WPR",
+				"currencyPairs":["WPRBTC", "WPRETH"]
+			},
+			"WanChain": {
+				"id" : "WAN",
+				"currencyPairs":["WANBTC", "WANETH", "WANBNB"]
+			},
+			"NEM": {
+				"id" : "XEM",
+				"currencyPairs":["XEMBTC", "XEMETH", "XEMBNB"]
+			},
+			"Storm": {
+				"id" : "STORM",
+				"currencyPairs":["STORMBTC", "STORMETH", "STORMBNB"]
+			},
+			"Ontology": {
+				"id" : "ONT",
+				"currencyPairs":["ONTBTC", "ONTETH", "ONTBNB", "ONTUSDT"]
+			},
+			"Zilliqa": {
+				"id" : "ZIL",
+				"currencyPairs":["ZILBTC", "ZILETH", "ZILBNB"]
+			},
+			"POA Network": {
+				"id" : "POA",
+				"currencyPairs":["POABTC", "POAETH", "POABNB"]
+			},
+			"Nucleus Vision": {
+				"id" : "NCASH",
+				"currencyPairs":["NCASHBTC", "NCASHETH", "NCASHBNB"]
+			},
+			"Red Pulse": {
+				"id" : "RPX",
+				"currencyPairs":["RPXBTC", "RPXETH", "RPXBNB"]
+			},
+			"Aeternity": {
+				"id" : "AE",
+				"currencyPairs":["AEBTC", "AEETH", "AEBNB"]
+			},
+			"BluZelle": {
+				"id" : "BLZ",
+				"currencyPairs":["BLZBTC", "BLZETH", "BLZBNB"]
+			},
+			"ViaCoin": {
+				"id" : "VIA",
+				"currencyPairs":["VIABTC", "VIAETH", "VIABNB"]
+			},
+			"Nano": {
+				"id" : "NANO",
+				"currencyPairs":["NANOBTC", "NANOETH", "NANOBNB"]
+			},
+			"Steem": {
+				"id" : "STEEM",
+				"currencyPairs":["STEEMBTC", "STEEMETH", "STEEMBNB"]
+			},
+			"ChatCoin": {
+				"id" : "CHAT",
+				"currencyPairs":["CHATBTC", "CHATETH"]
+			},
+			"Internet of Services Token": {
+				"id" : "IOST",
+				"currencyPairs":["IOSTBTC", "IOSTETH"]
+			},
+			"PIVX": {
+				"id" : "PIVX",
+				"currencyPairs":["PIVXBTC", "PIVXETH","PIVXBNB"]
+			},
+			"INS Ecosystem": {
+				"id" : "INS",
+				"currencyPairs":["INSBTC", "INSETH"]
+			},
+			"iExec": {
+				"id" : "RLC",
+				"currencyPairs":["RLCBTC", "RLCETH","RLCBNB"]
+			},
+			"VIBE": {
+				"id" : "VIBE",
+				"currencyPairs":["VIBEBTC", "VIBEETH"]
+			},
+			"AppCoins": {
+				"id" : "APPC",
+				"currencyPairs":["APPCBTC", "APPCETH","APPCBNB"]
+			},
+			"Triggers": {
+				"id" : "TRIG",
+				"currencyPairs":["TRIGBTC", "TRIGETH","TRIGBNB"]
+			},
+			"Lunyr": {
+				"id" : "LUN",
+				"currencyPairs":["LUNBTC", "LUNETH"]
+			},
+			"NavCoin": {
+				"id" : "NAV",
+				"currencyPairs":["NAVBTC", "NAVETH","NAVBNB"]
+			},
+			"Wings": {
+				"id" : "WINGS",
+				"currencyPairs":["WINGSBTC", "WINGSETH"]
+			},
+			"Eidoo": {
+				"id" : "EDO",
+				"currencyPairs":["EDOBTC", "EDOETH"]
+			},
+			"Bread": {
+				"id" : "BRD",
+				"currencyPairs":["BRDBTC", "BRDETH","BRDBNB"]
+			},
+			"Neblio": {
+				"id" : "NEBL",
+				"currencyPairs":["NEBLBTC", "NEBLETH","NEBLBNB"]
+			},
+			"Aion": {
+				"id" : "AION",
+				"currencyPairs":["AIONBTC", "AIONETH","AIONBNB"]
+			},
+			"Aelf": {
+				"id" : "ELF",
+				"currencyPairs":["ELFBTC", "ELFETH"]
+			},
+			"Simple Token": {
+				"id" : "OST",
+				"currencyPairs":["OSTBTC", "OSTETH","OSTBNB"]
+			},
+			"ICON": {
+				"id" : "ICX",
+				"currencyPairs":["ICXBTC", "ICXETH","ICXBNB", "ICXUSDT"]
+			},
+			"Gifto": {
+				"id" : "GTO",
+				"currencyPairs":["GTOBTC", "GTOETH","GTOBNB"]
+			},
+			"WAVES": {
+				"id" : "WAVES",
+				"currencyPairs":["WAVESBTC", "WAVESETH","WAVESBNB"]
+			},
+			"Time New Bank": {
+				"id" : "TNB",
+				"currencyPairs":["TNBBTC", "TNBETH"]
+			},
+			"Litecoin": {
+				"id" : "LTC",
+				"currencyPairs":["LTCETH", "LTCUSDT","LTCBNB"]
+			},
+			"WaBi": {
+				"id" : "WABI",
+				"currencyPairs":["WABIBTC", "WABIETH","WABIBNB"]
+			},
+			"ETHLend": {
+				"id" : "LEND",
+				"currencyPairs":["LENDBTC", "LENDETH"]
+			},
+			"Cindicator": {
+				"id" : "CND",
+				"currencyPairs":["CNDBTC", "CNDETH", "CNDBNB"]
+			},
+			"Stellar": {
+				"id" : "XLM",
+				"currencyPairs":["XLMBTC", "XLMETH", "XLMBNB","XLMUSDT"]
+			},
+			"CyberMiles Token": {
+				"id" : "CMT",
+				"currencyPairs":["CMTBTC", "CMTETH", "CMTBNB"]
+			},
+			"Populous": {
+				"id" : "PPT",
+				"currencyPairs":["PPTBTC", "PPTETH"]
+			},
+			"Cardano": {
+				"id" : "ADA",
+				"currencyPairs":["ADABTC", "ADAETH", "ADAUSDT","ADABNB"]
+			},
+			"AdEx": {
+				"id" : "ADX",
+				"currencyPairs":["ADXBTC", "ADXETH", "ADXBNB"]
+			},
+			"DigixDAO": {
+				"id" : "DGD",
+				"currencyPairs":["DGDBTC", "DGDETH" ]
+			},
+			"Bitcoin Diamond": {
+				"id" : "BCD",
+				"currencyPairs":["BCDBTC", "BCDETH" ]
+			},
+			"Decentraland": {
+				"id" : "MANA",
+				"currencyPairs":["MANABTC", "MANAETH" ]
+			},
+			"FuelParty": {
+				"id" : "FUEL",
+				"currencyPairs":["FUELBTC", "FUELETH" ]
+			},
+			"Tierion": {
+				"id" : "TNT",
+				"currencyPairs":["TNTBTC", "TNTETH" ]
+			},
+			"Lisk": {
+				"id" : "LSK",
+				"currencyPairs":["LSKBTC", "LSKETH","LSKBNB" ]
+			},
+			"Zcoin": {
+				"id" : "XZC",
+				"currencyPairs":["XZCBTC", "XZCETH","XZCBNB" ]
+			},
+			"BitShares": {
+				"id" : "BTSBTC",
+				"currencyPairs":["BTSBTC", "BTSETH","BTSBNB" ]
+			},
+			"Quantstamp": {
+				"id" : "QSP",
+				"currencyPairs":["QSPBTC", "QSPETH","QSPBNB" ]
+			},
+			"PO.et": {
+				"id" : "POE",
+				"currencyPairs":["POEBTC", "POEETH" ]
+			},
+			"GlowShare": {
+				"id" : "GXS",
+				"currencyPairs":["GXSBTC", "GXSETH" ]
+			},
+			"Blox": {
+				"id" : "CDT",
+				"currencyPairs":["CDTBTC", "CDTETH" ]
+			},
+			"Genesis Vision": {
+				"id" : "GVT",
+				"currencyPairs":["GVTBTC", "GVTETH"]
+			},
+			"Aeron": {
+				"id" : "ARN",
+				"currencyPairs":["ARNBTC", "ARNETH"]
+			},
+			"BlockMason Credit Protocol": {
+				"id" : "BCPT",
+				"currencyPairs":["BCPTBTC", "BCPTETH","BCPTBNB" ]
+			},
+			"Basic Attention Token": {
+				"id" : "BAT",
+				"currencyPairs":["BATBTC", "BATETH","BATBNB" ]
+			},
+			"Ambrosus": {
+				"id" : "AMB",
+				"currencyPairs":["AMBBTC", "AMBETH","AMBBNB" ]
+			},
+			"Agrello": {
+				"id" : "DLT",
+				"currencyPairs":["DLTBNB", "DLTBTC","DLTETH" ]
+			},
+			"Monero": {
+				"id" : "XMR",
+				"currencyPairs":["XMRBTC", "XMRETH" ]
+			},
+			"Raiden Network Token": {
+				"id" : "RDN",
+				"currencyPairs":["RDNBTC", "RDNETH","RDNBNB" ]
+			},
+			"Ripio Credit Network": {
+				"id" : "RCN",
+				"currencyPairs":["RCNBTC", "RCNETH","RCNBNB"]
+			},
+			"Nuls": {
+				"id" : "NULS",
+				"currencyPairs":["NULSBNB", "NULSBTC","NULSETH","NULSUSDT" ]
+			},
+			"Komodo": {
+				"id" : "KMD",
+				"currencyPairs":["KMDBTC", "KMDETH" ]
+			},
+			"VeChain": {
+				"id" : "VEN",
+				"currencyPairs":["VENBNB", "VENBTC","VENETH","VENUSDT" ]
+			},
+			"Storj": {
+				"id" : "STORJ",
+				"currencyPairs":["STORJBTC", "STORJETH" ]
+			},
+			"Enjin": {
+				"id" : "ENJ",
+				"currencyPairs":["ENJBTC", "ENJETH","ENJBNB" ]
+			},
+			"Modum": {
+				"id" : "MOD",
+				"currencyPairs":["MODBTC", "MODETH" ]
+			},
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["XRPBTC", "XRPETH","XRPUSDT","XRPBNB" ]
+			},
+			"Ark": {
+				"id" : "ARK",
+				"currencyPairs":["ARKBTC", "ARKETH" ]
+			},
+			"Power Ledger": {
+				"id" : "POWR",
+				"currencyPairs":["POWRBTC", "POWRETH","POWRBNB" ]
+			},
+			"Tron": {
+				"id" : "TRX",
+				"currencyPairs":["TRXBTC", "TRXETH","TRXUSDT" ]
+			},
+			"Viberate": {
+				"id" : "VIB",
+				"currencyPairs":["VIBBTC", "VIBETH" ]
+			},
+			"Request Network": {
+				"id" : "REQ",
+				"currencyPairs":["REQBTC", "REQETH" ]
+			},
+			"Everex": {
+				"id" : "EVX",
+				"currencyPairs":["EVXBTC", "EVXETH" ]
+			},
+			"Bitcoin Gold": {
+				"id" : "BTG",
+				"currencyPairs":["BTGBTC", "BTGETH" ]
+			},
+			"Dash": {
+				"id" : "DASH",
+				"currencyPairs":["DASHBTC", "DASHETH" ]
+			},
+			"AirSwap Token": {
+				"id" : "AST",
+				"currencyPairs":["ASTBTC", "ASTETH"]
+			},
+			"Zcash": {
+				"id" : "ZEC",
+				"currencyPairs":["ZECBTC", "ZECETH"]
+			},
+			"Enigma": {
+				"id" : "ENG",
+				"currencyPairs":["ENGBTC", "ENGETH" ]
+			},
+			"Monetha": {
+				"id" : "MTH",
+				"currencyPairs":["MTHBTC", "MTHETH" ]
+			},
+			"Substratum": {
+				"id" : "SUB",
+				"currencyPairs":["SUBBTC", "SUBETH" ]
+			},
+			"Metal": {
+				"id" : "MTL",
+				"currencyPairs":["MTLBTC", "MTLETH" ]
+			},
+			"Moeda Loyality Points": {
+				"id" : "MDA",
+				"currencyPairs":["MDABTC", "MDAETH" ]
+			},
+			"SALT": {
+				"id" : "SALT",
+				"currencyPairs":["SALTBTC", "SALTETH" ]
+			},
+			"Verge Currency": {
+				"id" : "XVG",
+				"currencyPairs":["XVGBTC", "XVGETH"]
+			},
+			"ChainLink": {
+				"id" : "LINK",
+				"currencyPairs":["LINKBTC", "LINKETH"]
+			},
+			"IOTA": {
+				"id" : "IOTA",
+				"currencyPairs":["IOTABTC", "IOTAETH","IOTABNB","IOTAUSDT" ]
+			},
+			"SONM": {
+				"id" : "SNM",
+				"currencyPairs":["SNMBTC", "SNMETH"]
+			},
+			"Fun Fair": {
+				"id" : "FUN",
+				"currencyPairs":["FUNBTC", "FUNETH"]
+			},
+			"Kyber Network": {
+				"id" : "KNC",
+				"currencyPairs":["KNCBTC", "KNCETH"]
+			},
+			"Ethos": {
+				"id" : "BQX",
+				"currencyPairs":["BQXBTC", "BQXETH"]
+			},
+			"SingularDTV": {
+				"id" : "SNGLS",
+				"currencyPairs":["SNGLSBTC", "SNGLSETH"]
+			},
+			"STRATIS": {
+				"id" : "STRAT",
+				"currencyPairs":["STRATBTC", "STRATETH"]
+			},
+			"ZRX": {
+				"id" : "ZRX",
+				"currencyPairs":["ZRXBTC", "ZRXETH"]
+			},
+			"OmiseGO": {
+				"id" : "OMG",
+				"currencyPairs":["OMGBTC", "OMGETH"]
+			},
+			"You Own Your Own": {
+				"id" : "YOYO",
+				"currencyPairs":["YOYOBTC", "YOYOETH", "YOYOBNB"]
+			},
+			"Loopring": {
+				"id" : "LRC",
+				"currencyPairs":["LRCBTC", "LRCETH"]
+			},
+			"Waltonchain": {
+				"id" : "WTC",
+				"currencyPairs":["WTCBTC", "WTCETH", "WTCBNB"]
+			},
+			"Iconomi": {
+				"id" : "ICN",
+				"currencyPairs":["ICNETH", "ICNBTC"]
+			},
+			"Monaco MCO": {
+				"id" : "MCO",
+				"currencyPairs":["MCOETH", "MCOBTC", "MCOBNB"]
+			},
+			"District0x": {
+				"id" : "DNT",
+				"currencyPairs":["DNTETH", "DNTBTC"]
+			},
+			"Open ANX": {
+				"id" : "OAX",
+				"currencyPairs":["OAXETH", "OAXBTC"]
+			},
+			"HSHARE": {
+				"id" : "HSR",
+				"currencyPairs":["HSRBTC", "HSRETH"]
+			},
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["BTCUSDT"]
+			},
+			"NEO GAS": {
+				"id" : "GAS",
+				"currencyPairs":["GASBTC"]
+			},
+			"BITCONNECT": {
+				"id" : "BCC",
+				"currencyPairs":["BCCBTC", "BCCUSDT", "BCCETH", "BCCBNB"]
+			},
+			"BANCOR NETWORK TOKEN": {
+				"id" : "BNT",
+				"currencyPairs":["BNTETH", "BNTBTC", "BCCUSDT", "BCCBNB"]
+			},
+			"STATUS NETWORK TOKEN": {
+				"id" : "SNT",
+				"currencyPairs":["SNTETH", "SNTBTC"]
+			},
+			"EOS": {
+				"id" : "EOS",
+				"currencyPairs":["EOSETH", "EOSBTC", "EOSUSDT", "EOSBNB"]
+			},
+			"QTUM": {
+				"id" : "QTUM",
+				"currencyPairs":["QTUMETH", "QTUMBTC", "QTUMBNB", "QTUMUSDT"]
+			},
+			"Etherium Classic": {
+				"id" : "ETC",
+				"currencyPairs":["ETCETH", "ETCBTC", "ETCUSDT", "ETCBNB"]
+			},
+			"NEO COIN": {
+				"id" : "NEO",
+				"currencyPairs":["NEOBTC","NEOETH","NEOUSDT", "NEOBNB" ]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ETHUSDT","ETHBTC" ]
+			},
+			"BINANCE COIN": {
+				"id" : "BNB",
+				"currencyPairs":["BNBBTC","BNBETH","BNBUSDT" ]
+			}
+		},
+		"primecurrencies": {
+			"NEO GAS": {
+				"id" : "GAS",
+				"currencyPairs":["GASBTC"]
+			},
+			"BITCONNECT": {
+				"id" : "BCC",
+				"currencyPairs":["BCCBTC", "BCCUSDT", "BCCETH", "BCCBNB"]
+			},
+			"BANCOR NETWORK TOKEN": {
+				"id" : "BNT",
+				"currencyPairs":["BNTETH", "BNTBTC", "BCCUSDT", "BCCBNB"]
+			},
+			"STATUS NETWORK TOKEN": {
+				"id" : "SNT",
+				"currencyPairs":["SNTETH", "SNTBTC"]
+			},
+			"EOS": {
+				"id" : "EOS",
+				"currencyPairs":["EOSETH", "EOSBTC", "EOSUSDT", "EOSBNB"]
+			},
+			"QTUM": {
+				"id" : "QTUM",
+				"currencyPairs":["QTUMETH", "QTUMBTC", "QTUMBNB", "QTUMUSDT"]
+			},
+			"Verge Currency": {
+				"id" : "XVG",
+				"currencyPairs":["XVGBTC", "XVGETH"]
+			}
+		}  
+	},
+	"bitfinex":{
+		"publicEndpoint": "https://api.bitfinex.com/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"Everipedia": {
+				"id" : "IQX",
+				"currencyPairs":["iqxusd", "iqxbtc", "iqxeos"]
+			},
+			"DATA": {
+				"id" : "DTA",
+				"currencyPairs":["dtausd", "dtabtc", "dtaeth"]
+			},
+			"Holo": {
+				"id" : "HOT",
+				"currencyPairs":["hotusd", "hotbtc", "hoteth"]
+			},
+			"ATMChain": {
+				"id" : "ATM",
+				"currencyPairs":["atmusd", "atmbtc", "atmeth"]
+			},
+			"Essentia": {
+				"id" : "ESS",
+				"currencyPairs":["essusd", "essbtc", "esseth"]
+			},
+			"SEE": {
+				"id" : "SEE",
+				"currencyPairs":["seeusd", "seebtc", "seeeth"]
+			},
+			"Pchain": {
+				"id" : "PAI",
+				"currencyPairs":["paiusd", "paibtc", "ctxeth"]
+			},
+			"CarTaxi": {
+				"id" : "CTX",
+				"currencyPairs":["ctxusd", "ctxbtc", "ctxeth"]
+			},
+			"Cindicator": {
+				"id" : "CND",
+				"currencyPairs":["cndusd", "cndbtc", "cndeth"]
+			},
+			"Nucleus Vision": {
+				"id" : "NCA",
+				"currencyPairs":["ncausd", "ncabtc", "ncaeth"]
+			},
+			"Consensus": {
+				"id" : "SEN",
+				"currencyPairs":["senusd", "senbtc", "seneth"]
+			},
+			"0Chain": {
+				"id" : "ZCN",
+				"currencyPairs":["zcnusd", "zcnbtc", "zcneth"]
+			},
+			"CommerceBlock Token": {
+				"id" : "CBT",
+				"currencyPairs":["cbtusd", "cbtbtc", "cbteth"]
+			},
+			"FUSION": {
+				"id" : "FSN",
+				"currencyPairs":["fsnusd", "fsnbtc", "fsneth"]
+			},
+			"POY": {
+				"id" : "POY",
+				"currencyPairs":["poyusd", "poybtc", "poyeth"]
+			},
+			"Auctus": {
+				"id" : "AUC",
+				"currencyPairs":["aucusd", "aucbtc", "auceth"]
+			},
+			"Origin Spot Price": {
+				"id" : "ORS",
+				"currencyPairs":["orsusd", "orsbtc", "orseth"]
+			},
+			"DAD": {
+				"id" : "DAD",
+				"currencyPairs":["dadusd", "dadbtc", "dadeth"]
+			},
+			"BLOCKv": {
+				"id" : "VEE",
+				"currencyPairs":["veeusd", "veebtc", "veeeth"]
+			},
+			"UTRUST": {
+				"id" : "UTK",
+				"currencyPairs":["utkusd", "utkbtc", "utketh"]
+			},
+			"Lympo": {
+				"id" : "LYM",
+				"currencyPairs":["lymusd", "lymbtc", "lymeth"]
+			},
+			"POA Network": {
+				"id" : "POA",
+				"currencyPairs":["poausd", "poabtc", "poaeth"]
+			},
+			"Kyber Network": {
+				"id" : "KNC",
+				"currencyPairs":["kncusd", "knceth"]
+			},
+			"VeChain": {
+				"id" : "VEN",
+				"currencyPairs":["venusd", "venbtc","veneth" ]
+			},
+			"Maker": {
+				"id" : "MKR",
+				"currencyPairs":["mkrusd", "mkrbtc", "mkreth"]
+			},
+			"Bitcoin Interest": {
+				"id" : "BCI",
+				"currencyPairs":["bciusd", "bcibtc"]
+			},
+			"Verge Currency": {
+				"id" : "XVG",
+				"currencyPairs":["xvgusd", "xvgeur", "xvgjpy", "xvggbp", "xvgbtc", "xvgeth"]
+			},
+			"Stellar": {
+				"id" : "XLM",
+				"currencyPairs":["xlmusd", "xlmeur", "xlmjpy","xlmgbp", "xlmbtc", "xlmeth"]
+			},
+			"Storj": {
+				"id" : "STJ",
+				"currencyPairs":["stjusd", "stjbtc", "stjeth"]
+			},
+			"Mithril": {
+				"id" : "MIT",
+				"currencyPairs":["mitusd", "mitbtc", "miteth"]
+			},
+			"Dether": {
+				"id" : "DTH",
+				"currencyPairs":["dthusd", "dthbtc", "dtheth"]
+			},
+			"Aragon": {
+				"id" : "ANT",
+				"currencyPairs":["antusd", "antbtc", "anteth"]
+			},
+			"ODEM": {
+				"id" : "ODE",
+				"currencyPairs":["odeusd", "odebtc", "odeeth"]
+			},
+			"MedicalChain": {
+				"id" : "MTN",
+				"currencyPairs":["mtnusd", "mtnbtc", "mtneth"]
+			},
+			"BnkToTheFuture": {
+				"id" : "BFT",
+				"currencyPairs":["bftusd", "bftbtc", "bfteth"]
+			},
+			"SingularityNET": {
+				"id" : "AGI",
+				"currencyPairs":["agiusd", "agibtc", "agieth"]
+			},
+			"Cofound.it": {
+				"id" : "CFI",
+				"currencyPairs":["cfiusd", "cfibtc", "cfieth"]
+			},
+			"Worldwide Asset Exchange": {
+				"id" : "WAX",
+				"currencyPairs":["waxusd", "waxbtc", "waxeth"]
+			},
+			"Loopring": {
+				"id" : "LRC",
+				"currencyPairs":["lrcusd", "lrcbtc", "lrceth"]
+			},
+			"Raiden Network Token": {
+				"id" : "RDN",
+				"currencyPairs":["rdnusd", "rdnbtc", "rdneth"]
+			},
+			"Request Network": {
+				"id" : "REQ",
+				"currencyPairs":["requsd", "reqbtc", "reqeth"]
+			},
+			"All in one": {
+				"id" : "AIO",
+				"currencyPairs":["aiousd", "aiobtc", "aioeth"]
+			},
+			"IOST": {
+				"id" : "IOS",
+				"currencyPairs":["iosusd", "iosbtc", "ioseth"]
+			},
+			"NEO": {
+				"id" : "NEO",
+				"currencyPairs":["neoeur", "neojpy", "neogbp"]
+			},
+			"aelf": {
+				"id" : "ELF",
+				"currencyPairs":["elfusd", "elfbtc", "elfeth"]
+			},
+			"Augur": {
+				"id" : "REP",
+				"currencyPairs":["repusd", "repbtc", "repeth"]
+			},
+			"SNG": {
+				"id" : "SNG",
+				"currencyPairs":["sngusd", "sngbtc", "sngeth"]
+			},
+			"AidCoin": {
+				"id" : "AID",
+				"currencyPairs":["aidusd", "aidbtc", "aideth"]
+			},
+			"iExec": {
+				"id" : "RLC",
+				"currencyPairs":["rlcusd", "rlcbtc", "rlceth"]
+			},
+			"Ripio Credit Network": {
+				"id" : "RCN",
+				"currencyPairs":["rcnusd", "rcnbtc", "rcneth"]
+			},
+			"TRON": {
+				"id" : "TRX",
+				"currencyPairs":["trxusd", "trxbtc", "trxeth"]
+			},
+			"Sparks": {
+				"id" : "SPK",
+				"currencyPairs":["spkusd", "spkbtc", "spketh"]
+			},
+			"Time New Bank": {
+				"id" : "TNB",
+				"currencyPairs":["tnbusd", "tnbbtc", "tnbeth"]
+			},
+			"0x": {
+				"id" : "ZRX",
+				"currencyPairs":["zrxusd", "zrxbtc", "zrxeth"]
+			},
+			"FunFair": {
+				"id" : "FUN",
+				"currencyPairs":["funusd", "funbtc", "funeth"]
+			},
+			"Decentraland": {
+				"id" : "MNA",
+				"currencyPairs":["mnausd", "mnabtc", "mnaeth"]
+			},
+			"Basic Attention Token": {
+				"id" : "BAT",
+				"currencyPairs":["batusd", "batbtc", "bateth"]
+			},
+			"Status Network Token": {
+				"id" : "SNT",
+				"currencyPairs":["sntusd", "sntbtc", "snteth"]
+			},
+			"Golem": {
+				"id" : "GNT",
+				"currencyPairs":["gntusd", "gntbtc", "gnteth"]
+			},
+			"YOYOW": {
+				"id" : "YYW",
+				"currencyPairs":["yywusd", "yywbtc", "yyweth"]
+			},
+			"QASH": {
+				"id" : "QSH",
+				"currencyPairs":["qshusd", "qshbtc", "qsheth"]
+			},
+			"Datum": {
+				"id" : "DAT",
+				"currencyPairs":["datusd", "datbtc", "dateth"]
+			},
+			"BitQuark": {
+				"id" : "BTQ",
+				"currencyPairs":["btgusd", "btgbtc", "edoeth"]
+			},
+			"Eidoo": {
+				"id" : "EDO",
+				"currencyPairs":["edousd", "edobtc", "edoeth"]
+			},
+			"Aventus": {
+				"id" : "AVT",
+				"currencyPairs":["avtusd", "avtbtc", "avteth"]
+			},
+			"QTUM": {
+				"id" : "QTM",
+				"currencyPairs":["qtmusd", "qtmbtc", "qtmeth"]
+			},
+			"Metaverse ETP": {
+				"id" : "ETP",
+				"currencyPairs":["etpusd", "etpbtc", "etpeth"]
+			},
+			"NEO": {
+				"id" : "NEO",
+				"currencyPairs":["neousd", "neobtc", "neoeth"]
+			},
+			"Bitcoin Cash": {
+				"id" : "BCH",
+				"currencyPairs":["bchusd", "bchbtc", "bcheth"]
+			},
+			"OmiseGO": {
+				"id" : "OMG",
+				"currencyPairs":["omgusd", "omgbtc", "omgeth"]
+			},
+			"SANTIMENT NETWORK TOKEN": {
+				"id" : "SAN",
+				"currencyPairs":["sanusd", "sanbtc", "saneth"]
+			},
+			"EOS": {
+				"id" : "EOS",
+				"currencyPairs":["eosusd", "eosbtc", "eoseth", "eoseur", "eosgbp", "eosjpy"]
+			},
+			"IOTA": {
+				"id" : "IOT",
+				"currencyPairs":["iotusd", "iotbtc", "ioteth", "ioteur", "iotjpy", "iotgbp"]
+			},
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["xrpusd", "xrpbtc"]
+			},
+			"Dashcoin": {
+				"id" : "DSH",
+				"currencyPairs":["dshusd", "dshbtc"]
+			},
+			"Monero": {
+				"id" : "XMR",
+				"currencyPairs":["xmrusd", "xmrbtc"]
+			},
+			"Zcash": {
+				"id" : "ZEC",
+				"currencyPairs":["zecusd", "zecbtc"]
+			},
+			"Recovery Right Token": {
+				"id" : "RRT",
+				"currencyPairs":["rrtusd", "rrtbtc"]
+			},
+			"Ethereum Classic": {
+				"id" : "ETC",
+				"currencyPairs":["etcusd", "etcbtc"]
+			},
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["btcusd", "btceur", "btcjpy","btcgbp"]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ethusd","ethbtc","etheur","ethjpy","ethgbp" ]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["ltcusd","ltcbtc" ]
+			}
+		},
+		"primecurrencies": {
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["xrpusd"]
+			},
+			
+			"Monero": {
+				"id" : "XMR",
+				"currencyPairs":["xmrusd"]
+			},
+			"Zcash": {
+				"id" : "ZEC",
+				"currencyPairs":["zecusd"]
+			},
+			"IOTA": {
+				"id" : "IOT",
+				"currencyPairs":["iotusd"]
+			},
+			"Verge Currency": {
+				"id" : "XVG",
+				"currencyPairs":["xvgusd"]
+			}
+			
+		}  
+	},
+	"bitstamp":{
+		"publicEndpoint": "https://www.bitstamp.net/api/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"EURO": {
+				"id" : "EUR",
+				"currencyPairs":["eurusd"]
+			},
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["xrpeur", "xrpbtc", "xrpusd"]
+			},
+			"Bitcoin": {
+				"id" : "BTC",
+				"currencyPairs":["btcusd", "btceur"]
+			},
+			"Bitcoin Cash": {
+				"id" : "BCH",
+				"currencyPairs":["bchusd", "bcheur", "bchbtc"]
+			},
+			"Ether": {
+				"id" : "ETH",
+				"currencyPairs":["ethusd","ethbtc","etheur"]
+			},
+			"Litecoin": {
+				"id" : "LTC",
+				"currencyPairs":["ltcusd", "ltceur", "ltcbtc"]
+			}
+		} 
+	},
+	"coinone":{
+		"publicEndpoint": "https://api.coinone.co.kr/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"0x": {
+				"id" : "ZRX",
+				"currencyPairs":["zrx"]
+			},
+			"Kyber Network": {
+				"id" : "KNC",
+				"currencyPairs":["knc"]
+			},
+			"Zilliqa": {
+				"id" : "ZIL",
+				"currencyPairs":["zil"]
+			},
+			"Streamr DATAcoin": {
+				"id" : "DATA",
+				"currencyPairs":["data"]
+			},
+			"EOS.IO": {
+				"id" : "EOS",
+				"currencyPairs":["eos"]
+			},
+			"OmiseGO": {
+				"id" : "OMG",
+				"currencyPairs":["omg"]
+			},
+			"Bitcoin Gold": {
+				"id" : "btg",
+				"currencyPairs":["btg"]
+			},
+			"IOTA": {
+				"id" : "IOTA",
+				"currencyPairs":["iota"]
+			},
+			"QTUM": {
+				"id" : "QTUM",
+				"currencyPairs":["qtum"]
+			},
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["xrp"]
+			},
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["btc"] 
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["bch"]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["eth"]
+			},
+			"Ethereum Classic": {
+				"id" : "ETC",
+				"currencyPairs":["etc"]
+			},
+			"Litecoin": {
+				"id" : "LTC",
+				"currencyPairs":["ltc" ]
+			}
+		} 
+	},
+	"bitrex":{
+		"publicEndpoint": "https://bittrex.com/api/v1.1/public/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"Refereum": {
+				"id" : "RFR",
+				"currencyPairs":["BTC-RFR"]
+			},
+			"Loom Network": {
+				"id" : "LOOM",
+				"currencyPairs":["BTC-LOOM"]
+			},
+			"Mainframe": {
+				"id" : "MFT",
+				"currencyPairs":["BTC-MFT"]
+			},
+			"Bankex": {
+				"id" : "BKX",
+				"currencyPairs":["BTC-BKX"]
+			},
+			"NoLimitCoin": {
+				"id" : "NLC2",
+				"currencyPairs":["BTC-NLC2"]
+			},
+			"Crowd Machine": {
+				"id" : "CMCT",
+				"currencyPairs":["BTC-CMCT"]
+			},
+			"CashBet": {
+				"id" : "CBC",
+				"currencyPairs":["BTC-CBC"]
+			},
+			"BitTube": {
+				"id" : "TUBE",
+				"currencyPairs":["BTC-TUBE"]
+			},
+			"Tether": {
+				"id" : "USDT",
+				"currencyPairs":["USD-USDT"]
+			},
+			"Odyssey": {
+				"id" : "OCN",
+				"currencyPairs":["BTC-OCN","ETH-OCN"]
+			},
+			"Gifto": {
+				"id" : "GTO",
+				"currencyPairs":["BTC-GTO","ETH-GTO"]
+			},
+			"Gifto": {
+				"id" : "GTO",
+				"currencyPairs":["BTC-GTO","ETH-GTO"]
+			},
+			"Naga": {
+				"id" : "NGC",
+				"currencyPairs":["BTC-NGC","ETH-NGC"]
+			},
+			"AidCoin": {
+				"id" : "AID",
+				"currencyPairs":["BTC-AID","ETH-AID"]
+			},
+			"Storm": {
+				"id" : "STORM",
+				"currencyPairs":["BTC-STORM","ETH-STORM"]
+			},
+			"Bloom": {
+				"id" : "BLT",
+				"currencyPairs":["BTC-BLT","ETH-BLT"]
+			},
+			"Propy": {
+				"id" : "PRO",
+				"currencyPairs":["BTC-PRO","ETH-PRO"]
+			},
+			"Polymath": {
+				"id" : "POLY",
+				"currencyPairs":["BTC-POLY","ETH-POLY"]
+			},
+			"DMarket": {
+				"id" : "DMT",
+				"currencyPairs":["BTC-DMT","ETH-DMT"]
+			},
+			"UpToken": {
+				"id" : "UP",
+				"currencyPairs":["BTC-UP","ETH-UP"]
+			},
+			"Loopring": {
+				"id" : "LRC",
+				"currencyPairs":["BTC-LRC","ETH-LRC"]
+			},
+			"TrueUSD": {
+				"id" : "TUSD",
+				"currencyPairs":["BTC-TUSD","ETH-TUSD","USDT-TUSD", "USD-TUSD"]
+			},
+			"TRON": {
+				"id" : "TRX",
+				"currencyPairs":["BTC-TRX","ETH-TRX", "USDT-TRX"]
+			},
+			"BlockMason Credit Protocol": {
+				"id" : "BCPT",
+				"currencyPairs":["BTC-BCPT","ETH-BCPT"]
+			},
+			"BLOCKv": {
+				"id" : "VEE",
+				"currencyPairs":["BTC-VEE","ETH-VEE"]
+			},
+			"0x Protocol": {
+				"id" : "ZRX",
+				"currencyPairs":["BTC-ZRX","ETH-ZRX"]
+			},
+			"Worldwide Asset Exchange": {
+				"id" : "WAX",
+				"currencyPairs":["BTC-WAX","ETH-WAX"]
+			},
+			"Sirin Token": {
+				"id" : "SRN",
+				"currencyPairs":["BTC-SRN","ETH-SRN"]
+			},
+			"Ignis": {
+				"id" : "IGNIS",
+				"currencyPairs":["BTC-IGNIS"]
+			},
+			"UnikoinGold": {
+				"id" : "UKG",
+				"currencyPairs":["BTC-UKG", "ETH-UKG"]
+			},
+			"Enigma": {
+				"id" : "ENG",
+				"currencyPairs":["BTC-ENG", "ETH-ENG"]
+			},
+			"Bitcoin Gold": {
+				"id" : "BTG",
+				"currencyPairs":["BTC-BTG", "ETH-BTG", "USDT-BTG"]
+			},
+			"PowerLedger": {
+				"id" : "POWR",
+				"currencyPairs":["BTC-POWR","ETH-POWR"]
+			},
+			"Mercury": {
+				"id" : "MER",
+				"currencyPairs":["BTC-MER"]
+			},
+			"Viberate": {
+				"id" : "VIB",
+				"currencyPairs":["BTC-VIB", "ETH-VIB"]
+			},
+			"Ripio Credit Network": {
+				"id" : "RCN",
+				"currencyPairs":["BTC-RCN", "ETH-RCN"]
+			},
+			"Blocktix": {
+				"id" : "TIX",
+				"currencyPairs":["BTC-TIX"]
+			},
+			"Salt": {
+				"id" : "MANA",
+				"currencyPairs":["BTC-SALT", "ETH-SALT"]
+			},
+			"Decentraland": {
+				"id" : "MANA",
+				"currencyPairs":["BTC-MANA", "ETH-MANA"]
+			},
+			"Ada": {
+				"id" : "ADA",
+				"currencyPairs":["BTC-ADA", "USDT-ADA"]
+			},
+			"district0x": {
+				"id" : "DNT",
+				"currencyPairs":["BTC-DNT"]
+			},
+			"Bitcoin Cash": {
+				"id" : "QTUM",
+				"currencyPairs":["BTC-BCH", "ETH-BCH", "USDT-BCH"]
+			},
+			"Qtum": {
+				"id" : "QTUM",
+				"currencyPairs":["BTC-QTUM","ETH-QTUM"]
+			},
+			"Particl": {
+				"id" : "PART",
+				"currencyPairs":["BTC-PART"]
+			},
+			"Civic": {
+				"id" : "CVC",
+				"currencyPairs":["BTC-CVC", "ETH-CVC"]
+			},
+			"OmiseGO": {
+				"id" : "OMG",
+				"currencyPairs":["BTC-OMG", "ETH-OMG","USDT-OMG"]
+			},
+			"AdEx": {
+				"id" : "ADX",
+				"currencyPairs":["BTC-ADX"]
+			},
+			"Storj": {
+				"id" : "STORJ",
+				"currencyPairs":["BTC-STORJ"]
+			},
+			"TenX Pay Token": {
+				"id" : "PAY",
+				"currencyPairs":["BTC-PAY", "ETH-PAY"]
+			},
+			"adToken": {
+				"id" : "ADT",
+				"currencyPairs":["BTC-ADT"]
+			},
+			"Monaco": {
+				"id" : "MCO",
+				"currencyPairs":["BTC-MCO", "ETH-MCO"]
+			},
+			"Elastic": {
+				"id" : "XEL",
+				"currencyPairs":["BTC-XEL"]
+			},
+			"DECENT": {
+				"id" : "DCT",
+				"currencyPairs":["BTC-DCT"]
+			},
+			"Status Network Token": {
+				"id" : "SNT",
+				"currencyPairs":["BTC-SNT", "ETH-SNT"]
+			},
+			"Numeraire": {
+				"id" : "NMR",
+				"currencyPairs":["BTC-NMR"]
+			},
+			"Bancor": {
+				"id" : "CFI",
+				"currencyPairs":["BTC-BNT"]
+			},
+			"Cofound.it": {
+				"id" : "CFI",
+				"currencyPairs":["BTC-CFI", "ETH-CFI"]
+			},
+			"Cofound.it": {
+				"id" : "CFI",
+				"currencyPairs":["BTC-CFI"]
+			},
+			"Patientory": {
+				"id" : "PTOY",
+				"currencyPairs":["BTC-PTOY"]
+			},
+			"CreditBit": {
+				"id" : "CRB",
+				"currencyPairs":["BTC-CRB"]
+			},
+			"Quantum Resistant Ledger": {
+				"id" : "QRL",
+				"currencyPairs":["BTC-QRL"]
+			},
+			"Zencash": {
+				"id" : "BAT",
+				"currencyPairs":["BTC-ZEN"]
+			},
+			"Basic Attention Token": {
+				"id" : "BAT",
+				"currencyPairs":["BTC-BAT", "ETH-BAT"]
+			},
+			"Siacoin": {
+				"id" : "ANT",
+				"currencyPairs":["BTC-SC", "ETH-SC", "USDT-SC"]
+			},
+			"Aragon": {
+				"id" : "ANT",
+				"currencyPairs":["BTC-ANT", "ETH-ANT"]
+			},
+			"Humaniq": {
+				"id" : "HMQ",
+				"currencyPairs":["BTC-HMQ"]
+			},
+			"Lunyr": {
+				"id" : "LUN",
+				"currencyPairs":["BTC-LUN", "ETH-LUN"]
+			},
+			"Guppy": {
+				"id" : "GUP",
+				"currencyPairs":["BTC-GUP"]
+			},
+			"Gnosis": {
+				"id" : "GNO",
+				"currencyPairs":["BTC-GNO", "ETH-GNO"]
+			},
+			"iEx.ec": {
+				"id" : "RLC",
+				"currencyPairs":["BTC-RLC", "ETH-RLC"]
+			},
+			"Wings": {
+				"id" : "WINGS",
+				"currencyPairs":["BTC-WINGS"]
+			},
+			"More": {
+				"id" : "MORE",
+				"currencyPairs":["BTC-MORE", "ETH-MORE"]
+			},
+			"Edgeless": {
+				"id" : "EDG",
+				"currencyPairs":["BTC-EDG"]
+			},
+			"Nexium": {
+				"id" : "NXC",
+				"currencyPairs":["BTC-NXC"]
+			},
+			"Golem": {
+				"id" : "GNT",
+				"currencyPairs":["BTC-GNT", "ETH-GNT"]
+			},
+			"Bytes": {
+				"id" : "GBYTE",
+				"currencyPairs":["BTC-GBYTE"]
+			},
+			"Incent": {
+				"id" : "INCNT",
+				"currencyPairs":["BTC-INCNT"]
+			},
+			"Incent": {
+				"id" : "INCNT",
+				"currencyPairs":["BTC-INCNT"]
+			},
+			"Databits": {
+				"id" : "DTB",
+				"currencyPairs":["BTC-DTB"]
+			},
+			"Musicoin": {
+				"id" : "MUSIC",
+				"currencyPairs":["BTC-MUSIC"]
+			},
+			"Tokes": {
+				"id" : "TKS",
+				"currencyPairs":["BTC-TKS"]
+			},
+			"Dynamic": {
+				"id" : "DYN",
+				"currencyPairs":["BTC-DYN"]
+			},
+			"Ark": {
+				"id" : "ARK",
+				"currencyPairs":["BTC-ARK"]
+			},
+			"Melon": {
+				"id" : "MLN",
+				"currencyPairs":["BTC-MLN"]
+			},
+			"Swarm City Token": {
+				"id" : "SWT",
+				"currencyPairs":["BTC-SWT"]
+			},
+			"Crown": {
+				"id" : "CRW",
+				"currencyPairs":["BTC-CRW"]
+			},
+			"Qwark": {
+				"id" : "QWARK",
+				"currencyPairs":["BTC-QWARK"]
+			},
+			"Lomocoin": {
+				"id" : "LMC",
+				"currencyPairs":["BTC-LMC"]
+			},
+			"Lomocoin": {
+				"id" : "LMC",
+				"currencyPairs":["BTC-LMC"]
+			},
+			"Ion": {
+				"id" : "ION",
+				"currencyPairs":["BTC-ION"]
+			},
+			"Sibcoin": {
+				"id" : "SIB",
+				"currencyPairs":["BTC-SIB"]
+			},
+			"GBG": {
+				"id" : "GBG",
+				"currencyPairs":["BTC-GBG"]
+			},
+			"Komodo": {
+				"id" : "KMD",
+				"currencyPairs":["BTC-KMD"]
+			},
+			"Ubiq": {
+				"id" : "UBQ",
+				"currencyPairs":["BTC-UBQ"]
+			},
+			"Golos": {
+				"id" : "GOLOS",
+				"currencyPairs":["BTC-GOLOS"]
+			},
+			"Internet Of People": {
+				"id" : "IOP",
+				"currencyPairs":["BTC-IOP"]
+			},
+			"Zclassic": {
+				"id" : "ZCL",
+				"currencyPairs":["BTC-ZCL"]
+			},
+			"Zcash": {
+				"id" : "ZEC",
+				"currencyPairs":["BTC-ZEC", "ETH-ZEC", "USDT-ZEC"]
+			},
+			"Neo": {
+				"id" : "NEO",
+				"currencyPairs":["BTC-NEO", "ETH-NEO", "USDT-NEO"]
+			},
+			"ZCoin": {
+				"id" : "XZC",
+				"currencyPairs":["BTC-XZC"]
+			},
+			"Ardor": {
+				"id" : "ARDR",
+				"currencyPairs":["BTC-ARDR"]
+			},
+			"Shift": {
+				"id" : "SHIFT",
+				"currencyPairs":["BTC-SHIFT"]
+			},
+			"Augur": {
+				"id" : "REP",
+				"currencyPairs":["BTC-REP", "ETH-REP"]
+			},
+			"Sequence": {
+				"id" : "SEQ",
+				"currencyPairs":["BTC-SEQ"]
+			},
+			"Verium": {
+				"id" : "VRM",
+				"currencyPairs":["BTC-VRM"]
+			},
+			"eBoost": {
+				"id" : "EBST",
+				"currencyPairs":["BTC-EBST"]
+			},
+			"Syndicate": {
+				"id" : "SYNX",
+				"currencyPairs":["BTC-SYNX"]
+			},
+			"UnbreakableCoin": {
+				"id" : "UNB",
+				"currencyPairs":["BTC-UNB"]
+			},
+			"Stratis": {
+				"id" : "STRAT",
+				"currencyPairs":["BTC-STRAT", "ETH-STRAT"]
+			},
+			"Ethereum Classic": {
+				"id" : "ETC",
+				"currencyPairs":["BTC-ETC", "ETH-ETC", "USDT-ETC"]
+			},
+			"Breakout Stake": {
+				"id" : "BRX",
+				"currencyPairs":["BTC-BRX"]
+			},
+			"SteemDollars": {
+				"id" : "SBD",
+				"currencyPairs":["BTC-SBD"]
+			},
+			"LBRY": {
+				"id" : "LBC",
+				"currencyPairs":["BTC-LBC"]
+			},
+			"LBRY": {
+				"id" : "LBC",
+				"currencyPairs":["BTC-LBC"]
+			},
+			"Waves": {
+				"id" : "WAVES",
+				"currencyPairs":["BTC-WAVES","ETH-WAVES"]
+			},
+			"Breakout": {
+				"id" : "BRK",
+				"currencyPairs":["BTC-BRK"]
+			},
+			"Lisk": {
+				"id" : "LSK",
+				"currencyPairs":["BTC-LSK"]
+			},
+			"Lisk": {
+				"id" : "LSK",
+				"currencyPairs":["BTC-LSK"]
+			},
+			"2GIVE": {
+				"id" : "2GIVE",
+				"currencyPairs":["BTC-2GIVE"]
+			},
+			"STEEM": {
+				"id" : "STEEM",
+				"currencyPairs":["BTC-STEEM"]
+			},
+			"Pivx": {
+				"id" : "PIVX",
+				"currencyPairs":["BTC-PIVX"]
+			},
+			"Verge": {
+				"id" : "XVG",
+				"currencyPairs":["BTC-XVG"]
+			},
+			"BitSend": {
+				"id" : "BSD",
+				"currencyPairs":["BTC-BSD"]
+			},
+			"Decred": {
+				"id" : "DCR",
+				"currencyPairs":["BTC-DCR", "USDT-DCR"]
+			},
+			"Radium": {
+				"id" : "RADS",
+				"currencyPairs":["BTC-RADS"]
+			},
+			"SaluS": {
+				"id" : "SLS",
+				"currencyPairs":["BTC-SLS"]
+			},
+			"EverGreenCoin": {
+				"id" : "EGC",
+				"currencyPairs":["BTC-EGC"]
+			},
+			"Factom": {
+				"id" : "FCT",
+				"currencyPairs":["BTC-FCT", "ETH-FCT"]
+			},
+			"EmerCoin": {
+				"id" : "EMC",
+				"currencyPairs":["BTC-EMC"]
+			},
+			"RevolutionVR": {
+				"id" : "RVR",
+				"currencyPairs":["BTC-RVR"]
+			},
+			"Lumen": {
+				"id" : "XLM",
+				"currencyPairs":["BTC-XLM", "ETH-XLM"]
+			},
+			"OMNI": {
+				"id" : "OMNI",
+				"currencyPairs":["BTC-OMNI"]
+			},
+			"BitCrystals": {
+				"id" : "BCY",
+				"currencyPairs":["BTC-BCY"]
+			},
+			"TransferCoin": {
+				"id" : "TX",
+				"currencyPairs":["BTC-TX"]
+			},
+			"Aeon": {
+				"id" : "AEON",
+				"currencyPairs":["BTC-AEON"]
+			},
+			"OkCash": {
+				"id" : "OK",
+				"currencyPairs":["BTC-OK"]
+			},
+			"OkCash": {
+				"id" : "OK",
+				"currencyPairs":["BTC-OK"]
+			},
+			"Sphere": {
+				"id" : "SPHR",
+				"currencyPairs":["BTC-SPHR"]
+			},
+			"Gambit": {
+				"id" : "GAM",
+				"currencyPairs":["BTC-GAM"]
+			},
+			"Diamond": {
+				"id" : "DMD",
+				"currencyPairs":["BTC-DMD"]
+			},
+			"Diamond": {
+				"id" : "DMD",
+				"currencyPairs":["BTC-DMD"]
+			},
+			"CLAMs": {
+				"id" : "CLAM",
+				"currencyPairs":["BTC-CLAM"]
+			},
+			"NEM": {
+				"id" : "XEM",
+				"currencyPairs":["BTC-XEM", "ETH-XEM"]
+			},
+			"MonetaryUnit": {
+				"id" : "MUE",
+				"currencyPairs":["BTC-MUE"]
+			},
+			"Nubits": {
+				"id" : "NBT",
+				"currencyPairs":["BTC-NBT"]
+			},
+			"Florin": {
+				"id" : "FLO",
+				"currencyPairs":["BTC-FLO"]
+			},
+			"GridCoin": {
+				"id" : "BTC-GRC",
+				"currencyPairs":["BTC-GRC"]
+			},
+			"FoldingCoin": {
+				"id" : "FLDC",
+				"currencyPairs":["BTC-FLDC"]
+			},
+			"GeoCoin": {
+				"id" : "GEO",
+				"currencyPairs":["BTC-GEO"]
+			},
+			"BitBean": {
+				"id" : "BITB",
+				"currencyPairs":["BTC-BITB"]
+			},
+			"Counterparty": {
+				"id" : "XCP",
+				"currencyPairs":["BTC-XCP"]
+			},
+			"Nexus": {
+				"id" : "NXS",
+				"currencyPairs":["BTC-NXS"]
+			},
+			"Circuits of Value": {
+				"id" : "COVAL",
+				"currencyPairs":["BTC-COVAL"]
+			},
+			"GameCredits": {
+				"id" : "BTC-GAME",
+				"currencyPairs":["GAME"]
+			},
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["BTC-XRP", "ETH-XRP", "USDT-XRP"]
+			},
+			"SpreadCoin": {
+				"id" : "SPR",
+				"currencyPairs":["BTC-SPR"]
+			},
+			"BitBay": {
+				"id" : "BAY",
+				"currencyPairs":["BTC-BAY"]
+			},
+			"Magi": {
+				"id" : "XMG",
+				"currencyPairs":["BTC-XMG"]
+			},
+			"Bytecent": {
+				"id" : "BYC",
+				"currencyPairs":["BTC-BYC"]
+			},
+			"ArtByte": {
+				"id" : "ABY",
+				"currencyPairs":["BTC-ABY"]
+			},
+			"DopeCoin": {
+				"id" : "BLOCK",
+				"currencyPairs":["BTC-BLOCK"]
+			},
+			"DopeCoin": {
+				"id" : "DOPE",
+				"currencyPairs":["BTC-DOPE"]
+			},
+			"Bitswift": {
+				"id" : "BITS",
+				"currencyPairs":["BTC-BITS"]
+			},
+			"ExclusiveCoin": {
+				"id" : "EXCL",
+				"currencyPairs":["BTC-EXCL"]
+			},
+			"BURSTCoin": {
+				"id" : "BURST",
+				"currencyPairs":["BTC-BURST"]
+			},
+			"BURSTCoin": {
+				"id" : "BURST",
+				"currencyPairs":["BTC-BURST"]
+			},
+			"DigiByte": {
+				"id" : "DGB",
+				"currencyPairs":["BTC-DGB", "ETH-DGB"]
+			},
+			"NeosCoin": {
+				"id" : "NEOS",
+				"currencyPairs":["BTC-NEOS"]
+			},
+			"SysCoin": {
+				"id" : "SYS",
+				"currencyPairs":["BTC-SYS"]
+			},
+			"CannabisCoin": {
+				"id" : "CANN",
+				"currencyPairs":["BTC-CANN"]
+			},
+			"I/OCoin": {
+				"id" : "IOC",
+				"currencyPairs":["BTC-IOC"]
+			},
+			"PinkCoin": {
+				"id" : "PINK",
+				"currencyPairs":["BTC-PINK"]
+			},
+			"ViaCoin": {
+				"id" : "VIA",
+				"currencyPairs":["BTC-VIA"]
+			},
+			"Stealth": {
+				"id" : "XST",
+				"currencyPairs":["BTC-XST"]
+			},
+			"NAVCoin": {
+				"id" : "NAV",
+				"currencyPairs":["BTC-NAV"]
+			},
+			"TrustPlus": {
+				"id" : "TRUST",
+				"currencyPairs":["BTC-TRUST"]
+			},
+			"DigitalNote": {
+				"id" : "XDN",
+				"currencyPairs":["BTC-XDN"]
+			},
+			"Kore": {
+				"id" : "KORE",
+				"currencyPairs":["BTC-KORE"]
+			},
+			"CloakCoin": {
+				"id" : "XMR",
+				"currencyPairs":["BTC-CLOAK"]
+			},
+			"Monero": {
+				"id" : "XMR",
+				"currencyPairs":["BTC-XMR", "ETH-XMR", "USDT-XMR"]
+			},
+			"VeriCoin": {
+				"id" : "CURE",
+				"currencyPairs":["BTC-CURE"]
+			},
+			"VeriCoin": {
+				"id" : "VRC",
+				"currencyPairs":["BTC-VRC"]
+			},
+			"EuropeCoin": {
+				"id" : "ERC",
+				"currencyPairs":["BTC-ERC"]
+			},
+			"EnergyCoin": {
+				"id" : "ENRG",
+				"currencyPairs":["BTC-ENRG"]
+			},
+			"HempCoin": {
+				"id" : "THC",
+				"currencyPairs":["BTC-THC"]
+			},
+			"MonaCoin": {
+				"id" : "MONA",
+				"currencyPairs":["BTC-MONA"]
+			},
+			"WhiteCoin": {
+				"id" : "XWC",
+				"currencyPairs":["BTC-XWC"]
+			},
+			"RubyCoin": {
+				"id" : "RBY",
+				"currencyPairs":["BTC-RBY"]
+			},
+			"Gulden": {
+				"id" : "NLG",
+				"currencyPairs":["BTC-NLG"]
+			},
+			"Groestlcoin": {
+				"id" : "GRS",
+				"currencyPairs":["BTC-GRS"]
+			},
+			"PesetaCoin": {
+				"id" : "PTC",
+				"currencyPairs":["BTC-PTC"]
+			},
+			"SolarCoin": {
+				"id" : "SLR",
+				"currencyPairs":["BTC-SLR"]
+			},
+			"GoldCoin": {
+				"id" : "GLD",
+				"currencyPairs":["BTC-GLD"]
+			},
+			"ElectronicGulden": {
+				"id" : "EFL",
+				"currencyPairs":["BTC-EFL"]
+			},
+			"AuroraCoin": {
+				"id" : "AUR",
+				"currencyPairs":["BTC-AUR"]
+
+			},
+			"Myriad": {
+				"id" : "XMY",
+				"currencyPairs":["BTC-XMY"]
+
+			},
+			"Einsteinium": {
+				"id" : "EMC2",
+				"currencyPairs":["BTC-EMC2" ]
+
+			},
+			"BlackCoin": {
+				"id" : "BLK",
+				"currencyPairs":["BTC-BLK" ]
+
+			},
+			"Potcoin": {
+				"id" : "POT",
+				"currencyPairs":["BTC-POT" ]
+
+			},
+			"Dash": {
+				"id" : "DASH",
+				"currencyPairs":["BTC-DASH", "USDT-DASH","ETH-DASH" ]
+
+			},
+			"NXT": {
+				"id" : "NXT",
+				"currencyPairs":["BTC-NXT", "USDT-NXT" ]
+
+			},
+			"Reddcoin": {
+				"id" : "RDD",
+				"currencyPairs":["BTC-RDD"]
+
+			},
+			"Feathercoin": {
+				"id" : "FTC",
+				"currencyPairs":["BTC-FTC"]
+
+			},
+			"Peercoin": {
+				"id" : "PPC",
+				"currencyPairs":["BTC-PPC"]
+
+			},
+			"Vertcoin": {
+				"id" : "VTC",
+				"currencyPairs":["BTC-VTC"]
+
+			},
+			"Dogecoin": {
+				"id" : "DOGE",
+				"currencyPairs":["BTC-DOGE"]
+
+			},
+			"Bitcoin": {
+				"id" : "BTC",
+				"currencyPairs":["USD-BTC", "USDT-BTC"]
+
+			},
+			"Bitcoin Cash": {
+				"id" : "BCH",
+				"currencyPairs":["BCH-USD","BCH-EUR","BCH-BTC" ]
+			},
+			"Ethereum": {
+				"id" : "ETH",
+				"currencyPairs":["BTC-ETH", "USDT-ETH", "USD-ETH"]
+			},
+			"Litecoin": {
+				"id" : "LTC",
+				"currencyPairs":["BTC-LTC","USDT-LTC","ETH-LTC", "BTC-LTC"]
+			}
+		} 
+	},
+	"okcoin":{
+		"publicEndpoint": "https://www.okcoin.com/api/v1/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"Bitcoin": {
+				"id" : "BTC",
+				"currencyPairs":["btc_usd"]
+			},
+			"Bitcoin Cash": {
+				"id" : "BCH",
+				"currencyPairs":["bch_usd"]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["eth_usd" ]
+			},
+			"Ethereum Classic": {
+				"id" : "ETC",
+				"currencyPairs":["etc_usd" ]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["ltc_usd" ]
+			}
+		} 
+	},
+	"gemini":{
+		"publicEndpoint": "https://api.gemini.com/v1/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"Bitcoin": {
+				"id" : "BTC",
+				"currencyPairs":["btcusd"]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ethbtc", "ethusd" ]
+			},
+			"Zcash": {
+				"id" : "ZEC",
+				"currencyPairs":["zecusd","zecbtc","zeceth"]
+			}
+		} 
+	},
+	"hitbtc":{
+		"publicEndpoint": "https://api.hitbtc.com/api/2/public/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"Cosmo coin": {
+				"id" : "COSM",
+				"currencyPairs":["COSMBTC", "COSMETH"]
+			},
+			"alef": {
+				"id" : "ELF",
+				"currencyPairs":["ELFBTC", "ELFUSD"]
+			},
+			"Bitcoin Diamond": {
+				"id" : "BCD",
+				"currencyPairs":["BCDBTC", "BCDUSD"]
+			},
+			"imbrex": {
+				"id" : "REX",
+				"currencyPairs":["REXBTC", "REXETH", "REXUSD"]
+			},
+			"First Bitcoin": {
+				"id" : "BIT",
+				"currencyPairs":["BITETH"]
+			},
+			"AppCoins": {
+				"id" : "APPC",
+				"currencyPairs":["APPCBTC", "APPCETH", "APPCUSD"]
+			},
+			"DWS": {
+				"id" : "DWS",
+				"currencyPairs":["DWSBTC", "DWSETH", "DWSUSD"]
+			},
+			"BCCF": {
+				"id" : "BCCF",
+				"currencyPairs":["BCCFDAI"]
+			},
+			"Maker": {
+				"id" : "MKR",
+				"currencyPairs":["MKRDAI", "MKRUSD", "MKRETH", "MKRBTC"]
+			},
+			"Litecoin": {
+				"id" : "LCC",
+				"currencyPairs":["LCCBTC"]
+			},
+			"SportyCo": {
+				"id" : "SPF",
+				"currencyPairs":["SPFUSD"]
+			},
+			"Maximine": {
+				"id" : "MXM",
+				"currencyPairs":["MXMBTC", "MXMETH"]
+			},
+			"Swarm": {
+				"id" : "SWM",
+				"currencyPairs":["SWMBTC"]
+			},
+			"Centrality": {
+				"id" : "CENNZ",
+				"currencyPairs":["CENNZBTC","CENNZETH"]
+			},
+			"Quntu": {
+				"id" : "QNTU",
+				"currencyPairs":["QNTUBTC","QNTUETH", "QNTUUSD"]
+			},
+			"Dorado": {
+				"id" : "DOR",
+				"currencyPairs":["DORBTC","DORETH", "DORUSD"]
+			},
+			"TaTaTu": {
+				"id" : "TTU",
+				"currencyPairs":["TTUBTC","TTUETH", "TTUETH"]
+			},
+			"IVY": {
+				"id" : "IVY",
+				"currencyPairs":["IVYBTC","IVYETH"]
+			},
+			"Colu Local Network": {
+				"id" : "CLN",
+				"currencyPairs":["CLNBTC","CLNETH"]
+			},
+			"Karma": {
+				"id" : "KRM",
+				"currencyPairs":["KRMUSD"]
+			},
+			"BlitzPredict": {
+				"id" : "XBP",
+				"currencyPairs":["XBPBTC"]
+			},
+			"U Network": {
+				"id" : "UUU",
+				"currencyPairs":["UUUBTC", "UUUETH"]
+			},
+			"DIPNET": {
+				"id" : "DPN",
+				"currencyPairs":["DPNBTC"]
+			},
+			"TokenDesk": {
+				"id" : "TDS",
+				"currencyPairs":["TDSBTC", "TDSETH", "TDSUSD"]
+			},
+			"Pitch": {
+				"id" : "PITCH",
+				"currencyPairs":["PITCHBTC", "PITCHETH"]
+			},
+			"Bitcoin Interest": {
+				"id" : "BCI",
+				"currencyPairs":["BCIBTC"]
+			},
+			"The Abyss": {
+				"id" : "ABYSS",
+				"currencyPairs":["ABYSSBTC", "ABYSSETH"]
+			},
+			"Paymon": {
+				"id" : "PMNT",
+				"currencyPairs":["PMNTBTC"]
+			},
+			"Zilliqa": {
+				"id" : "ZIL",
+				"currencyPairs":["ZILBTC", "ZILUSD"]
+			},
+			"COIN": {
+				"id" : "COIN",
+				"currencyPairs":["COINBTC", "COINUSD", "COINETH"]
+			},
+			"CashBet Coin": {
+				"id" : "CBC",
+				"currencyPairs":["CBCBTC", "CBCUSD", "CBCETH"]
+			},
+			"IOS Token": {
+				"id" : "IOST",
+				"currencyPairs":["IOSTBTC", "IOSTUSD"]
+			},
+			"SpaceChain": {
+				"id" : "SPC",
+				"currencyPairs":["SPCBTC", "SPCUSD", "SPCETH"]
+			},
+			"SpaceChain": {
+				"id" : "SPC",
+				"currencyPairs":["SPCBTC", "SPCUSD", "SPCETH"]
+			},
+			"Ink": {
+				"id" : "INK",
+				"currencyPairs":["INKBTC", "INKUSD", "INKETH"]
+			},
+			"KaratBank Coin": {
+				"id" : "KBC",
+				"currencyPairs":["KBCBTC", "KBCETH", "BNKETH"]
+			},
+			"Bankera": {
+				"id" : "BNK",
+				"currencyPairs":["BNKBTC", "BNKUSD", "BNKETH"]
+			},
+			"Bitshares": {
+				"id" : "BTS",
+				"currencyPairs":["BTSBTC"]
+			},
+			"Japan Brand Coin": {
+				"id" : "JBC",
+				"currencyPairs":["JBCBTC","JBCETH"]
+			},
+			"Jury.online": {
+				"id" : "JOT",
+				"currencyPairs":["JOTBTC"]
+			},
+			"HTML Coin": {
+				"id" : "HTML",
+				"currencyPairs":["HTMLBTC","HTMLETH", "HTMLUSD"]
+			},
+			"Cryptaur": {
+				"id" : "CPT",
+				"currencyPairs":["CPTBTC"]
+			},
+			"EBKC": {
+				"id" : "EBKC",
+				"currencyPairs":["EBKCBTC", "EBKCUSD", "EBKCETH"]
+			},
+			"Morpheus Network": {
+				"id" : "MORPH",
+				"currencyPairs":["MORPHBTC", "MORPHETH", "MORPHUSD"]
+			},
+			"FaceCoin": {
+				"id" : "FACE",
+				"currencyPairs":["FACEBTC", "FACEETH", "HBZETH"]
+			},
+			"Helbiz": {
+				"id" : "HBZ",
+				"currencyPairs":["HBZBTC", "HBZUSD", "HBZETH"]
+			},
+			"Helbiz": {
+				"id" : "HBZ",
+				"currencyPairs":["HBZBTC", "HBZUSD", "HBZETH"]
+			},
+			"Zeepin": {
+				"id" : "ZPT",
+				"currencyPairs":["ZPTBTC", "ZPTETH", "ZPTUSD"]
+			},
+			"Bitcoiin": {
+				"id" : "B2G",
+				"currencyPairs":["B2GBTC", "B2GUSD"]
+			},
+			"TI Value": {
+				"id" : "TIV",
+				"currencyPairs":["TIVBTC", "TIVUSD", "TIVETH"]
+			},
+			"Morpheus Labs": {
+				"id" : "MITX",
+				"currencyPairs":["MITXBTC", "MITXETH", "LUCETH"]
+			},
+			"Level Up Coin": {
+				"id" : "LUC",
+				"currencyPairs":["LUCBTC", "LUCUSD", "LUCETH"]
+			},
+			"Stipend": {
+				"id" : "SPD",
+				"currencyPairs":["SPDBTC", "SPDETH"]
+			},
+			"Friendz": {
+				"id" : "FDZ",
+				"currencyPairs":["FDZBTC", "FDZETH", "FDZUSD"]
+			},
+			"STRAKS": {
+				"id" : "STAK",
+				"currencyPairs":["STAKBTC", "STAKETH"]
+			},
+			"Sovereign coin": {
+				"id" : "HERO",
+				"currencyPairs":["HEROBTC", "HEROETH"]
+			},
+			"Ejoy coin": {
+				"id" : "EJOY",
+				"currencyPairs":["EJOYBTC", "EJOYETH", "EJOYUSD"]
+			},
+			"Monero Classic": {
+				"id" : "XMC",
+				"currencyPairs":["XMCBTC", "XMCUSDT", "XMCETH"]
+			},
+			"Patron": {
+				"id" : "PATBTC",
+				"currencyPairs":["PATBTC", "PATETH", "PATUSD"]
+			},
+			"Chainium": {
+				"id" : "CHX",
+				"currencyPairs":["CHXBTC", "CHXETH", "CHXUSD"]
+			},
+			"Nexo": {
+				"id" : "NEXO",
+				"currencyPairs":["NEXOBTC", "NEXOUSD", "NEXOETH"]
+			},
+			"FuzeX": {
+				"id" : "FXT",
+				"currencyPairs":["FXTBTC", "FXTETH"]
+			},
+			"Penta": {
+				"id" : "PNT",
+				"currencyPairs":["PNTBTC", "PNTETH"]
+			},
+			"Tokia": {
+				"id" : "TKA",
+				"currencyPairs":["TKABTC", "TKAETH", "TKAUSD"]
+			},
+			"Matrix AI Network": {
+				"id" : "MAN",
+				"currencyPairs":["MANBTC", "MANETH", "MANUSD"]
+			},
+			"Crowd Machine ": {
+				"id" : "CMCT",
+				"currencyPairs":["CMCTBTC", "CMCTETH", "CMCTUSD"]
+			},
+			"Auctus": {
+				"id" : "AUC",
+				"currencyPairs":["AUCBTC", "AUCETH"]
+			},
+			"NANJCOIN": {
+				"id" : "NANJ",
+				"currencyPairs":["NANJBTC"]
+			},
+			"Consentium": {
+				"id" : "CSM",
+				"currencyPairs":["CSMBTC", "CSMUSD", "CSMETH"]
+			},
+			"Lendingblock": {
+				"id" : "LND",
+				"currencyPairs":["LNDETH"]
+			},
+			"Bitcoin Private": {
+				"id" : "BTCP",
+				"currencyPairs":["BTCPBTC", "BTCPUSD", "BTCPETH"]
+			},
+			"Naviaddress": {
+				"id" : "NAVI",
+				"currencyPairs":["NAVIBTC", "NAVIETH"]
+			},
+			"Freyrchain": {
+				"id" : "FREC",
+				"currencyPairs":["FRECETH", "FRECBTC", "FRECUSDT"]
+			},
+			"CVCoin": {
+				"id" : "CVCOIN",
+				"currencyPairs":["CVCOINBTC", "CVCOINETH", "CVCOINUSD"]
+			},
+			"Ontology": {
+				"id" : "ONT",
+				"currencyPairs":["ONTBTC", "ONTETH", "ONTUSD"]
+			},
+			"WIKI": {
+				"id" : "WIKI",
+				"currencyPairs":["WIKIBTC", "WIKIETH", "WIKIUSD"]
+			},
+			"VIO": {
+				"id" : "VIO",
+				"currencyPairs":["VIOBTC"]
+			},
+			"Avoncoin": {
+				"id" : "ACAT",
+				"currencyPairs":["TCNBTC"]
+			},
+			"ACA Network": {
+				"id" : "ACAT",
+				"currencyPairs":["ACATBTC", "ACATETH", "ACATUSD"]
+			},
+			"THEKEY": {
+				"id" : "TKY",
+				"currencyPairs":["TKYBTC"]
+			},
+			"SUNC": {
+				"id" : "SUNC",
+				"currencyPairs":["SUNCETH"]
+			},
+			"Mithril": {
+				"id" : "MITH",
+				"currencyPairs":["MITHBTC", "MITHETH", "MITHUSD"]
+			},
+			"GET": {
+				"id" : "GET",
+				"currencyPairs":["GETBTC"]
+			},
+			"BigBoobsCoin": {
+				"id" : "BBC",
+				"currencyPairs":["BBCBTC", "BBCETH"]
+			},
+			"AdHive": {
+				"id" : "ADH",
+				"currencyPairs":["ADHBTC", "ADHETH"]
+			},
+			"Golem": {
+				"id" : "GNT",
+				"currencyPairs":["GNTBTC", "GNTETH", "GNTUSD"]
+			},
+			"CyberVein": {
+				"id" : "CVT",
+				"currencyPairs":["CVTBTC", "CVTETH", "CVTUSD"]
+			},
+			"Fortuna": {
+				"id" : "FOTA",
+				"currencyPairs":["FOTAETH", "FOTABTC"]
+			},
+			"DAEX": {
+				"id" : "DAXT",
+				"currencyPairs":["DAXTBTC", "DAXTETH"]
+			},
+			"Kin": {
+				"id" : "KIN",
+				"currencyPairs":["KINETH"]
+			},
+			"Red Pulse": {
+				"id" : "RPX",
+				"currencyPairs":["RPXBTC", "RPXETH", "RPXUSD"]
+			},
+			"UNCoin": {
+				"id" : "UNC",
+				"currencyPairs":["UNCBTC", "UNCETH"]
+			},
+			"BlockLancer": {
+				"id" : "LNC",
+				"currencyPairs":["LNCBTC"]
+			},
+			"Nano": {
+				"id" : "NANO",
+				"currencyPairs":["NANOBTC", "NANOETH", "NANOUSD"]
+			},
+			"ShipChain": {
+				"id" : "SHIP",
+				"currencyPairs":["SHIPBTC", "SHIPETH"]
+			},
+			"GoByte": {
+				"id" : "GBX",
+				"currencyPairs":["GBXBTC", "GBXUSD", "GBXETH"]
+			},
+			"BitStation": {
+				"id" : "BSTN",
+				"currencyPairs":["BSTNBTC", "BSTNETH", "BSTNUSD"]
+			},
+			"Rentberry": {
+				"id" : "BERRY",
+				"currencyPairs":["BERRYBTC", "BERRYETH", "BERRYUSD"]
+			},
+			"Monero Original": {
+				"id" : "XMO",
+				"currencyPairs":["XMOBTC", "XMOUSD", "XMOETH"]
+			},
+			"LeadCoin": {
+				"id" : "LDC",
+				"currencyPairs":["LDCBTC", "HQXUSD", "HQXETH"]
+			},
+			"HOQU": {
+				"id" : "HQX",
+				"currencyPairs":["HQXBTC", "HQXUSD", "HQXETH"]
+			},
+			"BANCA": {
+				"id" : "BANCA",
+				"currencyPairs":["BANCAUSD"]
+			},
+			"BlockMesh": {
+				"id" : "BMH",
+				"currencyPairs":["BMHBTC"]
+			},
+			"BlockMesh": {
+				"id" : "BMH",
+				"currencyPairs":["BMHBTC"]
+			},
+			"aXpire": {
+				"id" : "AXP",
+				"currencyPairs":["AXPBTC", "AXPETH"]
+			},
+			"PolySwarm": {
+				"id" : "NCT",
+				"currencyPairs":["NCTBTC", "NCTETH", "NCTUSD"]
+			},
+			"Vice Industry Token": {
+				"id" : "VIT",
+				"currencyPairs":["VITBTC", "VITETH", "VITUSD"]
+			},
+			"Budo": {
+				"id" : "BUBO",
+				"currencyPairs":["BUBOBTC", "BUBOETH", "BUBOUSD"]
+			},
+			"Telcoin": {
+				"id" : "TEL",
+				"currencyPairs":["TELBTC", "TELETH"]
+			},
+			"Daneel": {
+				"id" : "DAN",
+				"currencyPairs":["DANBTC"]
+			},
+			"Yuan Chain": {
+				"id" : "YCC",
+				"currencyPairs":["YCCBTC"]
+			},
+			"StockChain": {
+				"id" : "SCC",
+				"currencyPairs":["SCCBTC"]
+			},
+			"IHT Real Estate Protocol": {
+				"id" : "IHT",
+				"currencyPairs":["IHTBTC", "IHTETH", "IHTUSD"]
+			},
+			"HLWCoin": {
+				"id" : "HLW",
+				"currencyPairs":["HLWETH"]
+			},
+			"SmartMesh": {
+				"id" : "MESH",
+				"currencyPairs":["MESHBTC", "MESHETH", "MESHUSD"]
+			},
+			"Crypterium": {
+				"id" : "CRPT",
+				"currencyPairs":["CRPTBTC", "CRPTUSD"]
+			},
+			"Esports.com": {
+				"id" : "ERT",
+				"currencyPairs":["ERTBTC"]
+			},
+			"CGC": {
+				"id" : "CGC",
+				"currencyPairs":["CGCETH"]
+			},
+			"Mold Coin": {
+				"id" : "MLD",
+				"currencyPairs":["MLDBTC", "MLDETH","MLDUSD"]
+			},
+			"IOTA": {
+				"id" : "IOTA",
+				"currencyPairs":["IOTABTC", "IOTAETH","IOTAUSD"]
+			},
+			"Stellar": {
+				"id" : "XLM",
+				"currencyPairs":["XLMBTC", "XLMETH", "XLMUSD"]
+			},
+			"Storiqa": {
+				"id" : "STQ",
+				"currencyPairs":["STQBTC", "STQETH", "STQUSD"]
+			},
+			"Odyssey": {
+				"id" : "OCN",
+				"currencyPairs":["OCNBTC", "OCNETH"]
+			},
+			"InsurChain": {
+				"id" : "INSUR",
+				"currencyPairs":["INSURBTC", "INSURETH"]
+			},
+			"Wild Crypto": {
+				"id" : "WILD",
+				"currencyPairs":["WILDBTC"]
+			},
+			"All Sports": {
+				"id" : "SOC",
+				"currencyPairs":["SOCBTC"]
+			},
+			"Noah Coin": {
+				"id" : "NOAH",
+				"currencyPairs":["NOAHBTC", "NOAHUSD", "NOAHETH"]
+			},
+			"Cube": {
+				"id" : "AUTO",
+				"currencyPairs":["AUTOBTC"]
+			},
+			"Banca": {
+				"id" : "BANCA",
+				"currencyPairs":["BANCABTC", "BANCAETH"]
+			},
+			"Dragon Coins": {
+				"id" : "DRG",
+				"currencyPairs":["DRGBTC", "DRGETH"]
+			},
+			"True Chain": {
+				"id" : "TRUE",
+				"currencyPairs":["TRUEBTC"]
+			},
+			"DATx": {
+				"id" : "DATX",
+				"currencyPairs":["DATXBTC", "DATXETH"]
+			},
+			"BitDegree": {
+				"id" : "BDG",
+				"currencyPairs":["BDGETH"]
+			},
+			"DADI": {
+				"id" : "DADI",
+				"currencyPairs":["DADIBTC", "DADIETH", "DADIUSD"]
+			},
+			"Crowdwiz": {
+				"id" : "WIZ",
+				"currencyPairs":["WIZBTC", "WIZETH", "WIZUSD"]
+			},
+			"Sether": {
+				"id" : "SETH",
+				"currencyPairs":["SETHETH", "SETHBTC"]
+			},
+			"GoldGate": {
+				"id" : "BGG",
+				"currencyPairs":["BGGBTC", "BGGETH","BGGUSD"]
+			},
+			"Matryx": {
+				"id" : "MTX",
+				"currencyPairs":["MTXETH", "MTXBTC","MTXUSD"]
+			},
+			"Render Payment": {
+				"id" : "RPM",
+				"currencyPairs":["RPMBTC", "RPMETH"]
+			},
+			"Spectiv": {
+				"id" : "SIG",
+				"currencyPairs":["SIGBTC"]
+			},
+			"Cardano": {
+				"id" : "ADA",
+				"currencyPairs":["ADABTC", "ADAETH", "ADAUSD"]
+			},
+			"HireMatch": {
+				"id" : "HIRE",
+				"currencyPairs":["HIREETH", "HIREBTC"]
+			},
+			"Achain": {
+				"id" : "ACT",
+				"currencyPairs":["ACTBTC", "ACTETH", "ACTUSD"]
+			},
+			"CoinPoker": {
+				"id" : "CHP",
+				"currencyPairs":["CHPETH"]
+			},
+			"COPYTRACK": {
+				"id" : "CPY",
+				"currencyPairs":["CPYBTC", "CPYETH"]
+			},
+			"Universa": {
+				"id" : "UTNP",
+				"currencyPairs":["UTNPETH", "UTNPBTC", "UTNPUSD"]
+			},
+			"Career Trust Ecosystem": {
+				"id" : "CTE",
+				"currencyPairs":["CTEBTC", "CTEETH", "CTEUSD"]
+			},
+			"AMPLE": {
+				"id" : "ACO",
+				"currencyPairs":["ACOETH", "BEZETH"]
+			},
+			"Bezop": {
+				"id" : "BEZ",
+				"currencyPairs":["BEZBTC", "BEZETH", "BEZUSD"]
+			},
+			"ShowHand": {
+				"id" : "HAND",
+				"currencyPairs":["HANDETH", "HANDUSD"]
+			},
+			"BitRent": {
+				"id" : "RNTB",
+				"currencyPairs":["RNTBETH"]
+			},
+			"DecentBet": {
+				"id" : "DBET",
+				"currencyPairs":["DBETBTC", "DBETETH", "DBETUSD"]
+			},
+			"ArbitrageCT": {
+				"id" : "ARCT",
+				"currencyPairs":["ARCTUSD", "ARCTBTC"]
+			},
+			"BetterBetting": {
+				"id" : "BETR",
+				"currencyPairs":["BETRBTC", "BETRETH", "BETRUSD"]
+			},
+			"Bit Public Talent Network": {
+				"id" : "BPTN",
+				"currencyPairs":["BPTNBTC", "BPTNETH", "BPTNUSD"]
+			},
+			"Cryptagio": {
+				"id" : "CPG",
+				"currencyPairs":["CPGBTC", "CPGETH"]
+			},
+			"Envion": {
+				"id" : "EVN",
+				"currencyPairs":["EVNBTC"]
+			},
+			"Wolk": {
+				"id" : "WLK",
+				"currencyPairs":["WLKBTC", "WLKETH", "WLKUSD"]
+			},
+			"Playkey": {
+				"id" : "PKTBTC",
+				"currencyPairs":["BCPTETH", "PKTETH"]
+			},
+			"BlockMason Credit Protocol": {
+				"id" : "BCPT",
+				"currencyPairs":["BCPTETH", "BCPTUSDT", "BCPTBTC"]
+			},
+			"Revain": {
+				"id" : "R",
+				"currencyPairs":["RBTC", "RETH"]
+			},
+			"Flip": {
+				"id" : "FLP",
+				"currencyPairs":["FLPBTC", "FLPETH", "FLPUSD"]
+			},
+			"Teky": {
+				"id" : "MEK",
+				"currencyPairs":["MEKBTC"]
+			},
+			"Lamden": {
+				"id" : "TAU",
+				"currencyPairs":["TAUBTC"]
+			},
+			"NeuCoin": {
+				"id" : "NEU",
+				"currencyPairs":["NEUBTC", "NEUETH", "NEUUSD"]
+			},
+			"Chronologic": {
+				"id" : "DAY",
+				"currencyPairs":["DAYBTC", "DAYETH", "DAYUSD"]
+			},
+			"Animation Vision Cash": {
+				"id" : "AVH",
+				"currencyPairs":["AVHETH", "AVHUSDT"]
+			},
+			"SwissBorg": {
+				"id" : "CHSB",
+				"currencyPairs":["CHSBBTC", "CHSBETH"]
+			},
+			"Genaro Network": {
+				"id" : "GNX",
+				"currencyPairs":["GNXETH"]
+			},
+			"UTRUST": {
+				"id" : "UTK",
+				"currencyPairs":["UTKBTC", "UTKETH", "UTKUSD"]
+			},
+			"Clout": {
+				"id" : "CLOUT",
+				"currencyPairs":["CLOUTBTC", "CLOUTUSDT", "CLOUTETH"]
+			},
+			"Peculium": {
+				"id" : "PCL",
+				"currencyPairs":["PCLBTC", "PCLETH"]
+			},
+			"Jibrel Network ": {
+				"id" : "JNT",
+				"currencyPairs":["JNTETH"]
+			},
+			"OriginTrail ": {
+				"id" : "TRAC",
+				"currencyPairs":["TRACETH"]
+			},
+			"GreenMed": {
+				"id" : "GRMD",
+				"currencyPairs":["GRMDBTC"]
+			},
+			"ChatCoin": {
+				"id" : "CHAT",
+				"currencyPairs":["CHATBTC", "CHATETH", "CHATUSD"]
+			},
+			"Cashcoin ": {
+				"id" : "CAS",
+				"currencyPairs":["CASBTC", "CASETH", "CASUSD"]
+			},
+			"SmartMesh ": {
+				"id" : "SMT",
+				"currencyPairs":["SMTBTC", "SMTETH", "SMTUSD"]
+			},
+			"Sentinel ": {
+				"id" : "SENT",
+				"currencyPairs":["SENTBTC", "SENTETH", "SENTUSD"]
+			},
+			"Covesting ": {
+				"id" : "COV",
+				"currencyPairs":["COVBTC", "COVETH"]
+			},
+			"InsurePal ": {
+				"id" : "IPL",
+				"currencyPairs":["IPLBTC", "IPLUSD", "IPLETH"]
+			},
+			"indaHash": {
+				"id" : "IDH",
+				"currencyPairs":["IDHBTC", "IDHETH"]
+			},
+			"CRYPTO20": {
+				"id" : "C20",
+				"currencyPairs":["C20BTC", "C20ETH"]
+			},
+			"Energy Eco": {
+				"id" : "EET",
+				"currencyPairs":["EETBTC", "EETETH", "EETUSD"]
+			},
+			"Worldwide Asset Exchange": {
+				"id" : "WAX",
+				"currencyPairs":["WAXBTC", "WAXETH", "WAXUSD"]
+			},
+			"Trade Token": {
+				"id" : "TIO",
+				"currencyPairs":["TIOBTC", "TIOETH", "TIOUSD"]
+			},
+			"EchoLink": {
+				"id" : "EKO",
+				"currencyPairs":["EKOBTC", "EKOETH", "EKOUSDT"]
+			},
+			"Komodo": {
+				"id" : "KMD",
+				"currencyPairs":["KMDBTC", "KMDETH", "KMDUSD"]
+			},
+			"United Traders Token": {
+				"id" : "UTT",
+				"currencyPairs":["UTTBTC", "UTTUSD", "UTTETH"]
+			},
+			"Streamr DATAcoin": {
+				"id" : "DATA",
+				"currencyPairs":["DATABTC", "DATAETH", "DATAUSD"]
+			},
+			"Cryptopay": {
+				"id" : "CPAY",
+				"currencyPairs":["CPAYETH"]
+			},
+			"Etherecash": {
+				"id" : "ECH",
+				"currencyPairs":["ECHBTC"]
+			},
+			"Monaco MCO": {
+				"id" : "MCO",
+				"currencyPairs":["MCOETH", "MCOBTC", "MCOUSD"]
+			},
+			"Naga": {
+				"id" : "NGC",
+				"currencyPairs":["NGCBTC","NGCETH", "NGCUSD"]
+			},
+			"DIMCOIN": {
+				"id" : "DIM",
+				"currencyPairs":["DIMETH", "DIMUSD", "DIMBTC"]
+			},
+			"Storm": {
+				"id" : "STORM",
+				"currencyPairs":["STORMBTC"]
+			},
+			"StarBase": {
+				"id" : "STAR",
+				"currencyPairs":["STARETH"]
+			},
+			"SwiftCoin": {
+				"id" : "SWFTC",
+				"currencyPairs":["SWFTCBTC", "SWFTCETH", "SWFTCUSD"]
+			},
+			"LockTrip": {
+				"id" : "LOC",
+				"currencyPairs":["LOCBTC", "LOCETH", "LOCUSD"]
+			},
+			"WorldCore": {
+				"id" : "WRC",
+				"currencyPairs":["WRCBTC", "WRCETH", "WRCUSD"]
+			},
+			"SportyCo": {
+				"id" : "SPF",
+				"currencyPairs":["SPFBTC", "SPFETH"]
+			},
+			"ETHLend": {
+				"id" : "LEND",
+				"currencyPairs":["LENDBTC", "LENDETH"]
+			},
+			"HSHARE": {
+				"id" : "HSR",
+				"currencyPairs":["HSRBTC"]
+			},
+			"Open Trading Network": {
+				"id" : "OTN",
+				"currencyPairs":["OTNBTC", "DOVETH"]
+			},
+			"Dovu": {
+				"id" : "DOV",
+				"currencyPairs":["DOVBTC", "DOVETH"]
+			},
+			"Zap": {
+				"id" : "ZAP",
+				"currencyPairs":["ZAPBTC", "ZAPUSD", "ZAPETH"]
+			},
+			"Speed Mining Service": {
+				"id" : "SMS",
+				"currencyPairs":["SMSBTC", "SMSETH", "SMSUSD"]
+			},
+			"ErosCoin": {
+				"id" : "ERO",
+				"currencyPairs":["EROBTC"]
+			},
+			"Kubera Coin": {
+				"id" : "KBR",
+				"currencyPairs":["KBRBTC"]
+			},
+			"Kubera Coin": {
+				"id" : "KBR",
+				"currencyPairs":["KBRBTC"]
+			},
+			"Presearch": {
+				"id" : "PRE",
+				"currencyPairs":["PREBTC"]
+			},
+			"DubaiCoin": {
+				"id" : "DBIX",
+				"currencyPairs":["DBIXBTC"]
+			},
+			"MicroMoney": {
+				"id" : "AMM",
+				"currencyPairs":["AMMBTC", "AMMETH", "AMMUSD"]
+			},
+			"Bitcore": {
+				"id" : "BTX",
+				"currencyPairs":["BTXBTC", "BTXUSD", "BTXBTC"]
+			},
+			"Bitcore": {
+				"id" : "BTX",
+				"currencyPairs":["BTXBTC", "BTXUSD", "BTXBTC"]
+			},
+			"Genesis Vision": {
+				"id" : "GVT",
+				"currencyPairs":["GVTBTC", "GVTETH"]
+			},
+			"Aeron": {
+				"id" : "ARN",
+				"currencyPairs":["ARNBTC", "ARNETH"]
+			},
+			"Elementrem": {
+				"id" : "ELE",
+				"currencyPairs":["ELEBTC"]
+			},
+			"Electrify.Asia": {
+				"id" : "ELEC",
+				"currencyPairs":["ELECUSD", "ELECETH", "ELECBTC"]
+			},
+			"CarTaxi": {
+				"id" : "CTX",
+				"currencyPairs":["CTXBTC", "CTXETH"]
+			},
+			"Hackspace capital": {
+				"id" : "HAC",
+				"currencyPairs":["HACBTC", "NEBLETH"]
+			},
+			"Neblio": {
+				"id" : "NEBL",
+				"currencyPairs":["NEBLBTC", "NEBLETH"]
+			},
+			"DCORP Utility": {
+				"id" : "DRPU",
+				"currencyPairs":["DRPUBTC", "DRPUETH" ]
+			},
+			"Commodity Ad Network": {
+				"id" : "CDX",
+				"currencyPairs":["CDXETH"]
+			},
+			"Octanox": {
+				"id" : "OTX",
+				"currencyPairs":["OTXBTC"]
+			},
+			"Metaverse ETP": {
+				"id" : "ETP",
+				"currencyPairs":["ETPBTC", "ETPETH", "ETPUSD"]
+			},
+			"Atlant": {
+				"id" : "ATL",
+				"currencyPairs":["ATLBTC"]
+			},
+			"Sociall": {
+				"id" : "SCL",
+				"currencyPairs":["SCLBTC"]
+			},
+			"ClearPoll": {
+				"id" : "POLL",
+				"currencyPairs":["POLLBTC"]
+			},
+			"HelloGold": {
+				"id" : "HGT",
+				"currencyPairs":["HGTETH", "HGTBTC"]
+			},
+			"Eidoo": {
+				"id" : "EDO",
+				"currencyPairs":["EDOBTC", "EDOETH", "EDOUSD"]
+			},
+			"Cloud": {
+				"id" : "CLD",
+				"currencyPairs":["CLDBTC", "CLDUSD", "CLDETH"]
+			},
+			"LATOKEN": {
+				"id" : "LA",
+				"currencyPairs":["LAETH"]
+			},
+			"SmartCoin": {
+				"id" : "SMART",
+				"currencyPairs":["SMARTBTC", "SMARTETH", "SMARTUSD" ]
+			},
+			"Bitcoin Gold": {
+				"id" : "BTG",
+				"currencyPairs":["BTGBTC", "BTGETH", "BTGUSD" ]
+			},
+			"TenX Pay Token": {
+				"id" : "PAY",
+				"currencyPairs":["PAYBTC", "PAYETH"]
+			},
+			"bitJob": {
+				"id" : "STU",
+				"currencyPairs":["STUUSD", "STUETH", "STUBTC", "STUUSD"]
+			},
+			"DomRaider": {
+				"id" : "DRT",
+				"currencyPairs":["DRTETH", "DRTBTC", "DRTUSDT"]
+			},
+			"Viberate": {
+				"id" : "VIB",
+				"currencyPairs":["VIBBTC", "VIBETH", "VIBUSD"]
+			},
+			"LIFE": {
+				"id" : "LIFE",
+				"currencyPairs":["LIFEBTC"]
+			},
+			"ATMChain": {
+				"id" : "ATM",
+				"currencyPairs":["ATMBTC", "ATMETH", "ATMUSD"]
+			},
+			"SegWit2X": {
+				"id" : "B2X",
+				"currencyPairs":["B2XBTC", "B2XETH", "B2XUSD"]
+			},
+			"Bitmark": {
+				"id" : "BTM",
+				"currencyPairs":["BTMBTC", "BTMETH", "BTMUSD"]
+			},
+			"Obsidian": {
+				"id" : "ODN",
+				"currencyPairs":["ODNBTC"]
+			},
+			"ATB Coin": {
+				"id" : "ATB",
+				"currencyPairs":["ATBBTC", "ATBETH", "ATBUSD"]
+			},
+			"Cryptonex": {
+				"id" : "CNX",
+				"currencyPairs":["CNXBTC"]
+			},
+			"Waltonchain": {
+				"id" : "WTC",
+				"currencyPairs":["WTCBTC"]
+			},
+			"Substratum": {
+				"id" : "SUB",
+				"currencyPairs":["SUBBTC", "SUBETH", "SUBUSD" ]
+			},
+			"BMCHAIN": {
+				"id" : "BMT",
+				"currencyPairs":["BMTBTC", "BMTETH"]
+			},
+			"Authorship": {
+				"id" : "ATS",
+				"currencyPairs":["ATSETH", "ATSBTC"]
+			},
+			"Target Coin": {
+				"id" : "TGT",
+				"currencyPairs":["TGTBTC"]
+			},
+			"ExchangeN": {
+				"id" : "EXN",
+				"currencyPairs":["EXNBTC"]
+			},
+			"Betking Bankroll": {
+				"id" : "BKB",
+				"currencyPairs":["BKBBTC"]
+			},
+			"eBTC Cold": {
+				"id" : "EBTCOLD",
+				"currencyPairs":["EBTCOLDBTC", "EBTCOLDETH", "EBTCOLDUSD"]
+			},
+			"Qvolta": {
+				"id" : "QVT",
+				"currencyPairs":["QVTETH"]
+			},
+			"Maecenas": {
+				"id" : "ART",
+				"currencyPairs":["ARTBTC"]
+			},
+			"VeChain": {
+				"id" : "VEN",
+				"currencyPairs":["VENBTC", "VENETH","VENUSD" ]
+			},
+			"Tron": {
+				"id" : "TRX",
+				"currencyPairs":["TRXBTC", "TRXETH","TRXUSD" ]
+			},
+			"Ethbits": {
+				"id" : "ETBS",
+				"currencyPairs":["ETBSBTC"]
+			},
+			"Zeusshield": {
+				"id" : "ZSC",
+				"currencyPairs":["ZSCBTC", "ZSCETH","ZSCUSD" ]
+			},
+			"Enjin": {
+				"id" : "ENJ",
+				"currencyPairs":["ENJBTC", "ENJETH","ENJUSD" ]
+			},
+			"VOISE": {
+				"id" : "VOISE",
+				"currencyPairs":["VOISEBTC"]
+			},
+			"VIBE": {
+				"id" : "VIBE",
+				"currencyPairs":["VIBEBTC"]
+			},
+			"EthBet": {
+				"id" : "EBET",
+				"currencyPairs":["EBETETH"]
+			},
+			"Crystal Clear": {
+				"id" : "CCT",
+				"currencyPairs":["CCTETH"]
+			},
+			"Dentacoin": {
+				"id" : "DCN",
+				"currencyPairs":["DCNBTC", "DCNTUSD", "DCNTETH", "DCNTBTC", "DCNUSD", "DCNETH", "DCNBTC"]
+			},
+			"DigiByte": {
+				"id" : "DGB",
+				"currencyPairs":["DGBBTC", "DGBUSD"]
+			},
+			"Verge Currency": {
+				"id" : "XVG",
+				"currencyPairs":["XVGBTC", "XVGETH", "XVGUSD"]
+			},
+			"MIPS": {
+				"id" : "MIPS",
+				"currencyPairs":["MIPSBTC"]
+			},
+			"MIPS": {
+				"id" : "MIPS",
+				"currencyPairs":["MIPSBTC"]
+			},
+			"YOYOW": {
+				"id" : "YOYOW",
+				"currencyPairs":["YOYOWBTC"]
+			},
+			"KickCoin": {
+				"id" : "KICK",
+				"currencyPairs":["KICKBTC", "INDIBTC", "INDETH"]
+			},
+			"Indorse Token": {
+				"id" : "IND",
+				"currencyPairs":["INDETH", "INDIBTC", "INDETH"]
+			},
+			"Lampix": {
+				"id" : "PIX",
+				"currencyPairs":["PIXBTC", "PIXETH"]
+			},
+			"Ormeus": {
+				"id" : "ORME",
+				"currencyPairs":["ORMEBTC"]
+			},
+			"BitDice": {
+				"id" : "CSNO",
+				"currencyPairs":["CSNOBTC"]
+			},
+			"NEO COIN": {
+				"id" : "NEO",
+				"currencyPairs":["NEOBTC","NEOEURS","NEODAI", "NEOTUSD", "NEOUSD", "NEOETH" ]
+			},
+			"ICON": {
+				"id" : "ICX",
+				"currencyPairs":["ICXBTC", "ICXETH","ICXUSD"]
+			},
+			"Loopring": {
+				"id" : "LRC",
+				"currencyPairs":["LRCBTC", "LRCETH"]
+			},
+			"MobileGo on WAVES": {
+				"id" : "WMGO",
+				"currencyPairs":["WMGOBTC", "WMGOUSD"]
+			},
+			"Monetha": {
+				"id" : "MTH",
+				"currencyPairs":["MTHETH"]
+			},
+			"Populous ": {
+				"id" : "PPT",
+				"currencyPairs":["PPTETH", "PPTBTC", "PPTBTC"]
+			},
+			"HappyCoin": {
+				"id" : "HPC",
+				"currencyPairs":["HPCBTC"]
+			},
+			"CryptoInsight": {
+				"id" : "TKR",
+				"currencyPairs":["TKRETH"]
+			},
+			"GameCredits": {
+				"id" : "GAME",
+				"currencyPairs":["GAMEBTC"]
+			},
+			"CryptoPing": {
+				"id" : "PING",
+				"currencyPairs":["PINGBTC"]
+			},
+			"Fujinto": {
+				"id" : "NTO",
+				"currencyPairs":["NTOBTC"]
+			}, 
+			"Ambrosus": {
+				"id" : "AMB",
+				"currencyPairs":["AMBUSD", "AMBETH","AMBBTC" ]
+			}, 
+			"AirToken": {
+				"id" : "AIR",
+				"currencyPairs":["AIRBTC", "AIRETH", "AIRUSD"]
+			},
+			"MCAP": {
+				"id" : "MCAP",
+				"currencyPairs":["MCAPBTC", "POEETH"]
+			},
+			"PO.et": {
+				"id" : "POE",
+				"currencyPairs":["POEBTC", "POEETH"]
+			},
+			"FuelParty": {
+				"id" : "FUEL",
+				"currencyPairs":["FUELBTC", "FUELETH", "FUELUSD" ]
+			},
+			"Hive": {
+				"id" : "HVN",
+				"currencyPairs":["HVNBTC", "HVNETH"]
+			},
+			"Fun Fair": {
+				"id" : "FUN",
+				"currencyPairs":["FUNBTC", "FUNETH", "FUNUSD"]
+			},
+			"Blox": {
+				"id" : "CDT",
+				"currencyPairs":["CDTETH", "CDTUSD", "CDTBTC"]
+			},
+			"MobileGo": {
+				"id" : "EMGO",
+				"currencyPairs":["EMGOBTC", "EMGOUSD"]
+			},
+			"SkinCoin": {
+				"id" : "SKIN",
+				"currencyPairs":["SKINBTC"]
+			},
+			"Cindicator": {
+				"id" : "CND",
+				"currencyPairs":["CNDBTC", "CNDETH", "CNDUSD"]
+			},
+			"Blackmoon Crypto": {
+				"id" : "BMC",
+				"currencyPairs":["BMCBTC", "BMCETH", "BMCUSD"]
+			},
+			"Presearch": {
+				"id" : "PRG",
+				"currencyPairs":["PRGETH", "PRGUSD"]
+			},
+			"Veritaseum": {
+				"id" : "VERI",
+				"currencyPairs":["VERIBTC", "VERIETH", "VERIUSD"]
+			},
+			"QTUM": {
+				"id" : "QTUM",
+				"currencyPairs":["QTUMETH", "QTUMBTC", "QTUMUSD"]
+			},
+			"Peercoin": {
+				"id" : "PPC",
+				"currencyPairs":["PPCBTC", "PPCUSD"]
+			},
+			"ICOS": {
+				"id" : "ICOS",
+				"currencyPairs":["ICOSBTC", "ICOSETH", "ICOSUSD"]
+			},
+			"Rivetz": {
+				"id" : "RVT",
+				"currencyPairs":["RVTBTC"]
+			},
+			"ZRX": {
+				"id" : "ZRX",
+				"currencyPairs":["ZRXBTC", "ZRXETH", "ZRXTUSD", "ZRXUSD"]
+			},
+			"BitAsean": {
+				"id" : "BAS",
+				"currencyPairs":["BASETH"]
+			},
+			"Exchange Union": {
+				"id" : "XUC",
+				"currencyPairs":["XUCUSD", "XUCBTC", "XUCETH"]
+			},
+			"Enigma": {
+				"id" : "ENG",
+				"currencyPairs":["ENGETH"]
+			},
+			"Enigma": {
+				"id" : "ENG",
+				"currencyPairs":["ENGETH"]
+			},
+			"CatCoin": {
+				"id" : "CAT",
+				"currencyPairs":["CATBTC", "CATETH", "CATUSD"]
+			},
+			"Six Network": {
+				"id" : "SIX",
+				"currencyPairs":["STXBTC", "STXETH", "STXUSD"]
+			},
+			"InvestFeed": {
+				"id" : "IFT",
+				"currencyPairs":["IFTBTC"]
+			},
+			"Tierion": {
+				"id" : "TNT",
+				"currencyPairs":["TNTETH", "TNTBTC" , "TNTUSD"]
+			},
+			"Opus": {
+				"id" : "OPT",
+				"currencyPairs":["OPTBTC"]
+			},
+			"District0x": {
+				"id" : "FYP",
+				"currencyPairs":["FYPBTC"]
+			},
+			"District0x": {
+				"id" : "DNT",
+				"currencyPairs":["DNTBTC"]
+			},
+			"Decentraland": {
+				"id" : "MANA",
+				"currencyPairs":["MANABTC", "MANAETH", "MANAUSD"]
+			},
+			"Quantum": {
+				"id" : "QAU",
+				"currencyPairs":["QAUBTC","QAUETH"]
+			},
+			"Agrello": {
+				"id" : "DLT",
+				"currencyPairs":["DLTBTC"]
+			},
+			"Everex": {
+				"id" : "EVX",
+				"currencyPairs":["EVXUSD", "EVXETH", "EVXBTC" ]
+			},
+			"COSS": {
+				"id" : "COSS",
+				"currencyPairs":["COSSETH", "COSSBTC"]
+			},
+			"Aventus": {
+				"id" : "AVT",
+				"currencyPairs":["AVTETH"]
+			},
+			"Propy": {
+				"id" : "PRO",
+				"currencyPairs":["PROETH"]
+			},
+			"Neverdie": {
+				"id" : "NDC",
+				"currencyPairs":["NDCETH"]
+			},
+			"Blocktix": {
+				"id" : "TIX",
+				"currencyPairs":["TIXETH"]
+			},
+			"Pillar": {
+				"id" : "PLR",
+				"currencyPairs":["PLRETH", "PLRUSD", "PLRBTC"]
+			},
+			"InsureX": {
+				"id" : "IXT",
+				"currencyPairs":["IXTETH", "IXTBTC"]
+			},
+			"Suretly": {
+				"id" : "SUR",
+				"currencyPairs":["SURETH", "SURUSD", "SURBTC"]
+			},
+			"MyBit": {
+				"id" : "MYB",
+				"currencyPairs":["MYBETH"]
+			},
+			"Useless Ethereum Token": {
+				"id" : "UET",
+				"currencyPairs":["UETETH"]
+			},
+			"DigitalDevelopersFund": {
+				"id" : "DDF",
+				"currencyPairs":["DDFETH"]
+			},
+			"Mothership": {
+				"id" : "MSP",
+				"currencyPairs":["MSPETH"]
+			},
+			"Minereum": {
+				"id" : "MNE",
+				"currencyPairs":["MNEBTC"]
+			},
+			"SANTIMENT NETWORK TOKEN": {
+				"id" : "SAN",
+				"currencyPairs":["SANETH"]
+			},
+			"Dent": {
+				"id" : "DENT",
+				"currencyPairs":["DENTETH"]
+			},
+			"EOS": {
+				"id" : "EOS",
+				"currencyPairs":["EOSETH", "EOSEURS", "EOSDAI", "EOSUSD", "EOSBTC"]
+			},
+			"DAO.Casino": {
+				"id" : "BET",
+				"currencyPairs":["BETETH"]
+			},
+			"AdEx": {
+				"id" : "ADX",
+				"currencyPairs":["ADXETH", "ADXUSD", "ADXBTC"]
+			},
+			"SunContract": {
+				"id" : "SNC",
+				"currencyPairs":["SNCETH","SNCUSD" ,"SNCBTC"]
+			},
+			"STRATIS": {
+				"id" : "STRAT",
+				"currencyPairs":["STRATBTC","STRATUSD" ,"STRATETH", "STRATBTC"]
+			},
+			"NetCoin": {
+				"id" : "NET",
+				"currencyPairs":["NETETH"]
+			},
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["XRPBTC", "XRPEURS","XRPDAI","XRPUSDT", "XRPETH" ]
+			},
+			"Xaurum": {
+				"id" : "XAUR",
+				"currencyPairs":["XAURETH"]
+			},
+			"DICE": {
+				"id" : "DICE",
+				"currencyPairs":["DICEBTC", "DICEETH"]
+			},
+			"Tezos": {
+				"id" : "XTZ",
+				"currencyPairs":["XTZBTC", "XTZUSD", "XTZETH"]
+			},
+			"Ethos": {
+				"id" : "BQX",
+				"currencyPairs":["BQXBTC", "BQXETH", "BQXUSD"]
+			},
+			"OmiseGO": {
+				"id" : "OMG",
+				"currencyPairs":["OMGETH", "OMGUSD", "OMGBTC"]
+			},
+			"Open ANX": {
+				"id" : "OAX",
+				"currencyPairs":["OAXETH", "OAXBTC","OAXUSD"]
+			},
+			"TenX Pay Token": {
+				"id" : "PAY",
+				"currencyPairs":["PAYETH"]
+			},
+			"Civic": {
+				"id" : "CVC",
+				"currencyPairs":["CVCUSD"]
+			},
+			"STATUS NETWORK TOKEN": {
+				"id" : "SNT",
+				"currencyPairs":["SNTETH", "SNTUSD", "SNTBTC"]
+			},
+			"SONM": {
+				"id" : "SNM",
+				"currencyPairs":["SNMBTC", "SNMETH"]
+			},
+			"FundYourselfNow": {
+				"id" : "FYN",
+				"currencyPairs":["FYNETH"]
+			},
+			"BANCOR NETWORK TOKEN": {
+				"id" : "BNT",
+				"currencyPairs":["BNTBTC", "BNTUSD", "BNTETH"]
+			},
+			"Polybius": {
+				"id" : "PLBT",
+				"currencyPairs":["PLBTBTC"]
+			},
+			"Cofound.it": {
+				"id" : "CFI",
+				"currencyPairs":["CFIBTC", "CFIETH"]
+			},
+			"Etherium Classic": {
+				"id" : "ETC",
+				"currencyPairs":["ETCBTC", "ETCETH", "ETCUSD"]
+			},
+			"Patientory": {
+				"id" : "PTOY",
+				"currencyPairs":["PTOYBTC", "PTOYETH"]
+			},
+			"Aeternity": {
+				"id" : "AE",
+				"currencyPairs":["AEBTC"]
+			},
+			"Xaurum": {
+				"id" : "XAUR",
+				"currencyPairs":["XAURBTC"]
+			},
+			"Wings": {
+				"id" : "WINGS",
+				"currencyPairs":["WINGSBTC"]
+			},
+			"TokenCard": {
+				"id" : "TKN",
+				"currencyPairs":["TKNBTC"]
+			},
+			"Swarm City Token": {
+				"id" : "SWT",
+				"currencyPairs":["SWTBTC", "SWTETH"]
+			},
+			"iEx.ec": {
+				"id" : "RLC",
+				"currencyPairs":["RLCBTC"]
+			},
+			"Edgeless": {
+				"id" : "EDG",
+				"currencyPairs":["EDGUSD", "EDGETH", "EDGBTC"]
+			},
+			"Nexium": {
+				"id" : "NXC",
+				"currencyPairs":["NXCBTC"]
+			},
+			"TaaS": {
+				"id" : "TAAS",
+				"currencyPairs":["TAASBTC", "TAASETH"]
+			},
+			"Lunyr": {
+				"id" : "LUN",
+				"currencyPairs":["LUNBTC"]
+			},
+			"Pluton": {
+				"id" : "PLU",
+				"currencyPairs":["PLUBTC", "PLUETH"]
+			},
+			"Guppy": {
+				"id" : "GUP",
+				"currencyPairs":["GUPBTC"]
+			},
+			"Aeon": {
+				"id" : "AEON",
+				"currencyPairs":["AEONBTC"]
+			},
+			"Aragon": {
+				"id" : "ANT",
+				"currencyPairs":["ANTBTC"]
+			},
+			"DECENT": {
+				"id" : "DCT",
+				"currencyPairs":["DCTBTC"]
+			},
+			"BOScoin": {
+				"id" : "BOS",
+				"currencyPairs":["BOSBTC"]
+			},
+			"ZrCoin": {
+				"id" : "ZRC",
+				"currencyPairs":["ZRCBTC"]
+			},
+			"Augur": {
+				"id" : "REP",
+				"currencyPairs":["REPBTC", "REPETH", "REPUSDT"]
+			},
+			"Gnosis": {
+				"id" : "GNO",
+				"currencyPairs":["GNOBTC", "GNOETH"]
+			},
+			"Chronobank": {
+				"id" : "TIME",
+				"currencyPairs":["TIMEBTC", "TIMEETH"]
+			},
+			"WeTrust": {
+				"id" : "TRST",
+				"currencyPairs":["TRSTBTC"]
+			},
+			"First Blood": {
+				"id" : "1ST",
+				"currencyPairs":["1STBTC", "1STETH"]
+			},
+			"SingularDTV": {
+				"id" : "SNGLS",
+				"currencyPairs":["SNGLSBTC", "SNGLSETH"]
+			},
+			"Iconomi": {
+				"id" : "ICN",
+				"currencyPairs":["ICNETH", "ICNBTC"]
+			},
+			"DigixDAO": {
+				"id" : "DGD",
+				"currencyPairs":["DGDBTC", "DGDETH" ]
+			},
+			"BTU Support": {
+				"id" : "BUS",
+				"currencyPairs":["BUSBTC"]
+			},
+			"Synereo": {
+				"id" : "AMP",
+				"currencyPairs":["AMPBTC"]
+			},
+			"MaidSafeCoin": {
+				"id" : "MAID",
+				"currencyPairs":["MAIDBTC", "MAIDETH", "MAIDUSD"]
+			},
+			"WAVES": {
+				"id" : "WAVES",
+				"currencyPairs":["WAVESBTC"]
+			},
+			"Zcash": {
+				"id" : "ZEC",
+				"currencyPairs":["ZECBTC", "ZECETH", "ZECUSD", "ZECEURS"]
+			},
+			"Ardor": {
+				"id" : "ARDR",
+				"currencyPairs":["ARDRBTC","ARDRUSD"]
+			},
+			"Monero": {
+				"id" : "XMR",
+				"currencyPairs":["XMRBTC", "XMREURS", "XMRDAI", "XMRETH", "XMRUSD", "XMRTUSD" ]
+			},
+			"NEM": {
+				"id" : "XEM",
+				"currencyPairs":["XEMBTC", "XEMETH", "XEMUSD"]
+			},
+			"DigitalNote": {
+				"id" : "XDN",
+				"currencyPairs":["XDNBTC", "XDNETH", "XDNUSD"]
+			},
+			"Steem": {
+				"id" : "STEEM",
+				"currencyPairs":["STEEMBTC"]
+			},
+			"SiaCoin": {
+				"id" : "SC",
+				"currencyPairs":["SCBTC"]
+			},
+			"SteemDollars": {
+				"id" : "SBD",
+				"currencyPairs":["SBDBTC", "SBDUSD", "SBDETH"]
+			},
+			"NXT": {
+				"id" : "NXT",
+				"currencyPairs":["NXTBTC", "NXTETH","NXTUSD" ]
+
+			},
+			"Lisk": {
+				"id" : "LSK",
+				"currencyPairs":["LSKBTC", "LSKUSD","LSKETH" ]
+			},
+			"Fantomcoin": {
+				"id" : "FCN",
+				"currencyPairs":["FCNBTC"]
+			},
+			"EmerCoin": {
+				"id" : "EMC",
+				"currencyPairs":["EMCBTC", "EMCUSDT", "EMCETH"]
+			},
+			"Dashcoin": {
+				"id" : "DSH",
+				"currencyPairs":["DSHBTC"]
+			},
+			"Dogecoin": {
+				"id" : "DOGE",
+				"currencyPairs":["DOGEETH", "DOGEBTC", "DOGEUSD", "DOGEETH"]
+
+			},
+			"Dash": {
+				"id" : "DASH",
+				"currencyPairs":["DASHBTC", "DASHEURS","DASHETH", "DASHUSD" ]
+			},
+			"ByteCoin": {
+				"id" : "BCN",
+				"currencyPairs":["BCNBTC", "BCNETH", "BCNUSD"]
+			},
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["BTCUSD", "BTCEURS", "BTCTUSD", "BTCDAI"]
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["BCHUSD","BCHETH","BCHBTC" ]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ETHBTC","ETHEURS","ETHTUSD", "ETHDAI", "ETHUSD"]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["LTCBTC","LTCEURS","LTCDAI", "LTCTUSD", "LTCETH", "LTCUSD"]
+			}
+		} 
+	},
+	"huobi":{
+		"publicEndpoint": "https://api.huobi.pro/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"Bibox Token": {
+				"id" : "BIX",
+				"currencyPairs":["bixbtc", "bixeth", "bixusdt"]
+			},
+			"Stellar": {
+				"id" : "XLM",
+				"currencyPairs":["xlmbtc", "xlmeth"]
+			},
+			"GlowShare": {
+				"id" : "GXS",
+				"currencyPairs":["gxsbtc", "gxseth" ]
+			},
+			"DigiByte": {
+				"id" : "DGB",
+				"currencyPairs":["dgbbtc", "dgbeth"]
+			},
+			"Box": {
+				"id" : "BOX",
+				"currencyPairs":["boxbtc", "boxeth"]
+			},
+			"Pchain": {
+				"id" : "PAI",
+				"currencyPairs":["paibtc", "paieth"]
+			},
+			"Decred": {
+				"id" : "DCR",
+				"currencyPairs":["dcrbtc"]
+			},
+			"Huobi 10": {
+				"id" : "HB10",
+				"currencyPairs":["hb10usdt"]
+			},
+			"WAVES": {
+				"id" : "WAVES",
+				"currencyPairs":["wavesbtc", "waveseth"]
+			},
+			"Bitcoin Gold": {
+				"id" : "BTG",
+				"currencyPairs":["btgbtc", "BTGETH" ]
+			},
+			"SBTC": {
+				"id" : "SBTC",
+				"currencyPairs":["sbtcbtc"]
+			},
+			"Bitcoin Diamond": {
+				"id" : "BCD",
+				"currencyPairs":["bcdbtc"]
+			},
+			"BitcoinX": {
+				"id" : "BIFI",
+				"currencyPairs":["bcxbtc"]
+			},
+			"Bitcoin File": {
+				"id" : "BIFI",
+				"currencyPairs":["bifibtc"]
+			},
+			"Waltonchain": {
+				"id" : "WTC",
+				"currencyPairs":["wtcbtc", "wtceth"]
+			},
+			"EduCoin": {
+				"id" : "EDU",
+				"currencyPairs":["edubtc", "edueth" ]
+			},
+			"SALT": {
+				"id" : "SALT",
+				"currencyPairs":["saltbtc", "salteth" ]
+			},
+			"Enigma": {
+				"id" : "ENG",
+				"currencyPairs":["engbtc", "engeth" ]
+			},
+			"AirSwap Token": {
+				"id" : "AST",
+				"currencyPairs":["astbtc", "asteth"]
+			},
+			"AdEx": {
+				"id" : "ADX",
+				"currencyPairs":["adxbtc", "adxeth"]
+			},
+			"Request Network": {
+				"id" : "REQ",
+				"currencyPairs":["reqbtc", "reqeth" ]
+			},
+			"Everex": {
+				"id" : "EVX",
+				"currencyPairs":["evxbtc", "evxeth" ]
+			},
+			"Metal": {
+				"id" : "MTL",
+				"currencyPairs":["mtlbtc" ]
+			},
+			"ChainLink": {
+				"id" : "LINK",
+				"currencyPairs":["linkbtc", "linketh"]
+			},
+			"Simple Token": {
+				"id" : "OST",
+				"currencyPairs":["ostbtc", "osteth"]
+			},
+			"Basic Attention Token": {
+				"id" : "BAT",
+				"currencyPairs":["batbtc", "bateth" ]
+			},
+			"NEO GAS": {
+				"id" : "GAS",
+				"currencyPairs":["gasbtc", "gaseth"]
+			},
+			"Tierion": {
+				"id" : "TNT",
+				"currencyPairs":["tntbtc", "tnteth" ]
+			},
+			"UTRUST": {
+				"id" : "UTK",
+				"currencyPairs":["utkbtc", "utketh"]
+			},
+			"Decentraland": {
+				"id" : "MANA",
+				"currencyPairs":["manabtc", "manaeth" ]
+			},
+			"Ripio Credit Network": {
+				"id" : "RCN",
+				"currencyPairs":["rcnbtc", "rcneth"]
+			},
+			"Monaco MCO": {
+				"id" : "MCO",
+				"currencyPairs":["mcobtc", "mcoeth"]
+			},
+			"Raiden Network Token": {
+				"id" : "RDN",
+				"currencyPairs":["rdnbtc", "rdneth" ]
+			},
+			"Datum": {
+				"id" : "DAT",
+				"currencyPairs":["datbtc", "dateth"]
+			},
+			"Quantstamp": {
+				"id" : "QSP",
+				"currencyPairs":["qspbtc", "qspeth" ]
+			},
+			"TenX Pay Token": {
+				"id" : "PAY",
+				"currencyPairs":["paybtc", "payeth"]
+			},
+			"Power Ledger": {
+				"id" : "POWR",
+				"currencyPairs":["powrbtc", "powreth" ]
+			},
+			"AI Dcotor": {
+				"id" : "AIDOC",
+				"currencyPairs":["aidocbtc"]
+			},
+			"AppCoins": {
+				"id" : "APPC",
+				"currencyPairs":["appcbtc", "appceth"]
+			},
+			"AppCoins": {
+				"id" : "APPC",
+				"currencyPairs":["appcbtc", "appceth"]
+			},
+			"Red Pulse": {
+				"id" : "RPX",
+				"currencyPairs":["rpxbtc"]
+			},
+			"Propy": {
+				"id" : "PROPY",
+				"currencyPairs":["propybtc","propyeth"]
+			},
+			"BluZelle": {
+				"id" : "BLZ",
+				"currencyPairs":["blzbtc", "blzeth"]
+			},
+			"Kyber Network": {
+				"id" : "KNC",
+				"currencyPairs":["kncbtc", "knceth"]
+			},
+			"ZRX": {
+				"id" : "ZRX",
+				"currencyPairs":["zrxbtc", "zrxeth"]
+			},
+			"QunQun": {
+				"id" : "QUN",
+				"currencyPairs":["qunbtc", "quneth"]
+			},
+			"Time New Bank": {
+				"id" : "TNB",
+				"currencyPairs":["tnbbtc", "tnbeth"]
+			},
+			"CyberMiles Token": {
+				"id" : "CMT",
+				"currencyPairs":["cmtbtc", "cmtusdt", "cmteth"]
+			},
+			"SunContract": {
+				"id" : "SNC",
+				"currencyPairs":["sncbtc","snceth" ]
+			},
+			"DeepBrain Chain": {
+				"id" : "DBC",
+				"currencyPairs":["dbcbtc", "dbceth"]
+			},
+			"Genaro Network": {
+				"id" : "GNX",
+				"currencyPairs":["gnxbtc", "gnxeth"]
+			},
+			"STK": {
+				"id" : "STK",
+				"currencyPairs":["stkbtc", "stketh"]
+			},
+			"MedicalChain": {
+				"id" : "MTN",
+				"currencyPairs":["mtnbtc", "mtneth"]
+			},
+			"TopChain": {
+				"id" : "TOPC",
+				"currencyPairs":["topcbtc", "topceth"]
+			},
+			"EchoLink": {
+				"id" : "EKO",
+				"currencyPairs":["ekobtc", "ekoeth"]
+			},
+			"QASH": {
+				"id" : "QASH",
+				"currencyPairs":["qashbtc", "qasheth"]
+			},
+			"Lisk": {
+				"id" : "LSK",
+				"currencyPairs":["lskbtc", "lsketh" ]
+			},
+			"YEE": {
+				"id" : "YEE",
+				"currencyPairs":["yeebtc", "yeeeth"]
+			},
+			"CoinMeet": {
+				"id" : "MEET",
+				"currencyPairs":["meetbtc", "meeteth"]
+			},
+			"SwiftCoin": {
+				"id" : "SWFTC",
+				"currencyPairs":["swftcbtc", "swftceth"]
+			},
+			"Lunyr": {
+				"id" : "LUN",
+				"currencyPairs":["lunbtc", "luneth"]
+			},
+			"WePower": {
+				"id" : "WPR",
+				"currencyPairs":["wprbtc", "wpreth"]
+			},
+			"ChatCoin": {
+				"id" : "CHAT",
+				"currencyPairs":["chatbtc", "chateth"]
+			},
+			"DigixDAO": {
+				"id" : "DGD",
+				"currencyPairs":["dgdbtc", "dgdeth" ]
+			},
+			"ICON": {
+				"id" : "ICX",
+				"currencyPairs":["icxbtc", "icxeth"]
+			},
+			"Sirin Token": {
+				"id" : "SRN",
+				"currencyPairs":["srnbtc","srneth"]
+			},
+			"Worldwide Asset Exchange": {
+				"id" : "WAX",
+				"currencyPairs":["waxbtc", "waxeth"]
+			},
+			"Matryx": {
+				"id" : "MTX",
+				"currencyPairs":["mtxbtc", "mtxeth"]
+			},
+			"Arcblock": {
+				"id" : "ABT",
+				"currencyPairs":["abtbtc", "abteth"]
+			},
+			"Zilla": {
+				"id" : "ZLA",
+				"currencyPairs":["zlabtc", "zlaeth"]
+			},
+			"WaykiChain": {
+				"id" : "WICC",
+				"currencyPairs":["wiccbtc", "wiccusdt", "wicceth"]
+			},
+			"BnkToTheFuture": {
+				"id" : "BFT",
+				"currencyPairs":["bftbtc", "bfteth", "bfteth"]
+			},
+			"WanChain": {
+				"id" : "WAN",
+				"currencyPairs":["wanbtc", "waneth"]
+			},
+			"Libra Credit": {
+				"id" : "LBA",
+				"currencyPairs":["lbabtc","lbaeth"]
+			},
+			"KAN": {
+				"id" : "KAN",
+				"currencyPairs":["kanbtc","kaneth"]
+			},
+			"Polymath": {
+				"id" : "POLY",
+				"currencyPairs":["polybtc","polyeth"]
+			},
+			"Steem": {
+				"id" : "STEEM",
+				"currencyPairs":["steembtc", "steemeth"]
+			},
+			"Monero": {
+				"id" : "XMR",
+				"currencyPairs":["xmrbtc", "xmreth"]
+			},
+			"Golem": {
+				"id" : "GNT",
+				"currencyPairs":["gntusdt", "gnteth", "gntbtc"]
+			},
+			"Civic": {
+				"id" : "CVC",
+				"currencyPairs":["cvcusdt", "cvceth", "cvcbtc"]
+			},
+			"IOT Chain": {
+				"id" : "itc",
+				"currencyPairs":["itcusdt", "itceth", "itcbtc"]
+			},
+			"Aelf": {
+				"id" : "ELF",
+				"currencyPairs":["elfusdt", "elfbtc"]
+			},
+			"Storj": {
+				"id" : "STORJ",
+				"currencyPairs":["storjusdt", "storjbtc" ]
+			},
+			"MediShares": {
+				"id" : "MDS",
+				"currencyPairs":["mdsbtc", "mdsusdt", "mdseth"]
+			},
+			"LinkEye": {
+				"id" : "LET",
+				"currencyPairs":["letbtc", "letusdt", "leteth"]
+			},
+			"HSHARE": {
+				"id" : "HSR",
+				"currencyPairs":["hsrbtc", "hsrusdt", "hsreth"]
+			},
+			"RuffChain": {
+				"id" : "RUFF",
+				"currencyPairs":["ruffusdt", "ruffeth", "ruffbtc"]
+			},
+			"Nebulas": {
+				"id" : "NAS",
+				"currencyPairs":["nasbtc", "nasusdt", "naseth"]
+			},
+			"NEM": {
+				"id" : "XEM",
+				"currencyPairs":["xemusdt", "xembtc"]
+			},
+			"Zilliqa": {
+				"id" : "ZIL",
+				"currencyPairs":["zilusdt", "zileth", "zilbtc"]
+			},
+			"STATUS NETWORK TOKEN": {
+				"id" : "SNT",
+				"currencyPairs":["sntusdt", "sntbtc"]
+			},
+			"Theta Token": {
+				"id" : "THETA",
+				"currencyPairs":["thetausdt", "thetaeth", "thetabtc"]
+			},
+			"VeChain": {
+				"id" : "VEN",
+				"currencyPairs":["venusdt", "veneth","venbtc"]
+			},
+			"Elastos ": {
+				"id" : "ELA",
+				"currencyPairs":["elausdt", "elaeth", "elabtc"]
+			},
+			"SmartMesh ": {
+				"id" : "SMT",
+				"currencyPairs":["smtusdt", "smteth", "smtbtc"]
+			},
+			"QTUM": {
+				"id" : "QTUM",
+				"currencyPairs":["qtumusdt", "qtumeth", "qtumbtc"]
+			},
+			"NEO COIN": {
+				"id" : "NEO",
+				"currencyPairs":["neousdt","neobtc" ]
+			},
+			"DATA": {
+				"id" : "DTA",
+				"currencyPairs":["dtausdt", "dtaeth", "dtabtc"]
+			},
+			"Tron": {
+				"id" : "TRX",
+				"currencyPairs":["trxusdt", "trxeth","trxbtc" ]
+			},
+			"Huobi Token": {
+				"id" : "HT",
+				"currencyPairs":["htusdt", "hteth", "htbtc"]
+			},
+			"Internet of Services Token": {
+				"id" : "IOST",
+				"currencyPairs":["iostusdt", "iostht", "iosteth", "iostbtc"]
+			},
+			"Ontology": {
+				"id" : "ONT",
+				"currencyPairs":["ontbtc", "ontusdt", "onteth"]
+			},
+			"Bitshares": {
+				"id" : "BTS",
+				"currencyPairs":["btsusdt", "btseth", "btsbtc"]
+			},
+			"Bitmark": {
+				"id" : "BTM",
+				"currencyPairs":["btmusdt", "btmeth", "btmbtc"]
+			},
+			"Bitmark": {
+				"id" : "BTM",
+				"currencyPairs":["btmusdt", "btmeth", "btmbtc"]
+			},
+			"Achain": {
+				"id" : "ACT",
+				"currencyPairs":["actusdt", "acteth", "actbtc"]
+			},
+			"Achain": {
+				"id" : "ACT",
+				"currencyPairs":["actusdt", "acteth", "actbtc"]
+			},
+			"Cortex": {
+				"id" : "CTXC",
+				"currencyPairs":["ctxcusdt", "ctxceth", "ctxcbtc"]
+			},
+			"All Sports": {
+				"id" : "SOC",
+				"currencyPairs":["soceth", "socbtc"]
+			},
+			"Odyssey": {
+				"id" : "OCN",
+				"currencyPairs":["ocnusdt","ocneth", "ocnbtc"]
+			},
+			"IOTA": {
+				"id" : "IOTA",
+				"currencyPairs":["iotausdt", "iotaeth","iotabtc" ]
+			},
+			"Steem": {
+				"id" : "STEEM",
+				"currencyPairs":["steemusdt"]
+			},
+			"Cardano": {
+				"id" : "ADA",
+				"currencyPairs":["adausdt", "adaeth", "adabtc"]
+			},
+			"Zcash": {
+				"id" : "ZEC",
+				"currencyPairs":["zecusdt", "zecbtc"]
+			},
+			"Dash": {
+				"id" : "DASH",
+				"currencyPairs":["dashusdt", "dashht","dashbtc" ]
+			},
+			"OmiseGO": {
+				"id" : "OMG",
+				"currencyPairs":["omgusdt", "omgeth", "omgbtc"]
+			},
+			"Ripple": {
+				"id" : "XRP",
+				"currencyPairs":["xrpusdt", "xrpht","xrpbtc" ]
+			},
+			"EOS": {
+				"id" : "EOS",
+				"currencyPairs":["eosusdt", "eosht", "eoseth", "eosbtc"]
+			},
+			"Etherium Classic": {
+				"id" : "ETC",
+				"currencyPairs":["etcht", "etcbtc", "etcusdt"]
+			},
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["btcusdt"]
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["bchht","bchbtc","bchusdt" ]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ethbtc","ethusdt"]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["ltcht","ltcbtc","ltcusdt" ]
+			}
+		} 
+	},
+	"kraken":{
+		"publicEndpoint": "https://api.kraken.com/0/public/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"Zcash": {
+				"id" : "XZEC",
+				"currencyPairs":["XZECXXBT", "XZECZEUR", "XZECZJPY", "XZECZUSD"]
+			},
+			"Ripple": {
+				"id" : "XXRP",
+				"currencyPairs":["XXRPXXBT", "XXRPZCAD","XXRPZEUR","XXRPZJPY", "XXRPZUSD" ]
+			},
+			"Monero": {
+				"id" : "XXMRZ",
+				"currencyPairs":["XXMRXXBT", "XXMRZUSD" ]
+			},
+			"Stellar": {
+				"id" : "XXLM",
+				"currencyPairs":["XXLMXXBT", "XXLMZUSD"]
+			},
+			"Bricktox": {
+				"id" : "XXBT",
+				"currencyPairs":["XXBTZCAD", "XXBTZCAD.d", "XXBTZEUR", "XXBTZEUR.d", "XXBTZGBP", "XXBTZGBP.d",
+					"XXBTZJPY", "XXBTZJPY.d", "XXBTZUSD", "XXBTZUSD.d"]
+			},
+			"Augur": {
+				"id" : "XREP",
+				"currencyPairs":["XREPXETH", "XREPXXBT", "XREPZUSD"]
+			},
+			"Melon": {
+				"id" : "XMLN",
+				"currencyPairs":["XMLNXETH", "XMLNXXBT"]
+			},
+			"Iconomi": {
+				"id" : "XICN",
+				"currencyPairs":["XICNXETH", "XICNXXBT"]
+			},
+			"Etherium Classic": {
+				"id" : "XETC",
+				"currencyPairs":["XETCXETH", "XETCXXBT", "XETCZEUR", "XETCZUSD"]
+			},
+			"Ether": {
+				"id" : "XETH",
+				"currencyPairs":["XETHXXBT", "XETHXXBT.d", "XETHZCAD", "XETHZCAD.d",
+					"XETHZEUR.d", "XETHZGBP", "XETHZGBP.d", "XETHZJPY", "XETHZJPY.d", "XETHZUSD", "XETHZUSD.d"]
+			},
+			"USDT": {
+				"id" : "USDT",
+				"currencyPairs":["USDTZUSD", "GNOEUR", "GNOUSD", "GNOXBT"]
+			},
+			"Gnosis": {
+				"id" : "GNO",
+				"currencyPairs":["GNOETH", "GNOEUR", "GNOUSD", "GNOXBT"]
+			},
+			"EOS": {
+				"id" : "EOS",
+				"currencyPairs":["EOSETH", "EOSEUR", "EOSXBT"]
+			},
+			"Dash": {
+				"id" : "DASH",
+				"currencyPairs":["DASHEUR", "DASHUSD","DASHXBT" ]
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["BCHEUR","BCHUSD","BCHXBT" ]
+			},
+			"LITECOIN": {
+				"id" : "XLTC",
+				"currencyPairs":["XLTCXXBT","XLTCZEUR","XLTCZUSD" ]
+			}
+		} 
+	},
+	"kucoin":{
+		"publicEndpoint": "https://api.kucoin.com/v1/market/open/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["btcusd", "BTC-EUR", "BTC-GBP"]
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["BCH-USD","BCH-EUR","BCH-BTC" ]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ETH-USD","ETH-EUR","ETH-BTC" ]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["LTC-USD","LTC-EUR","LTC-BTC" ]
+			}
+		} 
+	},
+	"luno":{
+		"publicEndpoint": "https://api.mybitx.com/api/1/",
+		"privateEndpoint":"",
+		"timeout":5000,
+		"currencies": {
+			"BITCOIN": {
+				"id" : "BTC",
+				"currencyPairs":["BTC-USD", "BTC-EUR", "BTC-GBP"]
+			},
+			"BITCOIN CASH": {
+				"id" : "BCH",
+				"currencyPairs":["BCH-USD","BCH-EUR","BCH-BTC" ]
+			},
+			"ETHER": {
+				"id" : "ETH",
+				"currencyPairs":["ETH-USD","ETH-EUR","ETH-BTC" ]
+			},
+			"LITECOIN": {
+				"id" : "LTC",
+				"currencyPairs":["LTC-USD","LTC-EUR","LTC-BTC" ]
+			}
+		} 
+	},
+	"TOPCoins":{
+		"currencies": {
+			"GDAX": {
+				"id" : "BTC",
+				"name" : "BITCOIN",
+				"currencyPairs":["BTC-USD", "BTC-EUR", "BTC-GBP", 
+					"BCH-USD","BCH-EUR","BCH-BTC",
+					"ETH-USD","ETH-EUR","ETH-BTC",
+					"LTC-USD","LTC-EUR","LTC-BTC"
+				]
+			},
+			"BITFINEX": {
+				"id" : "XRP",
+				"name" : "Ripple",
+				"currencyPairs":["xrpusd", "xrpbtc", "zecusd", "zecbtc" ]
+			}
+		} 
+	}
+
+}

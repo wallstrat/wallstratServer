@@ -57,8 +57,10 @@ export namespace OkcoinMessage{
         msgbid.size=bid[1];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if (msgbid.price) {
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["asks"]){
         let msgask =new QuoteMessage();
@@ -66,10 +68,18 @@ export namespace OkcoinMessage{
         msgask.size=ask[1];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if (msgask.price) {
+          priceBook.push(msgask);
+        }
+        
       }
-      return priceBook
+      if (priceBook.length > 0) {
+        return priceBook;
+      }
+      else{
+        return null;
+      }
+      
     }
   }
    /**
@@ -85,8 +95,13 @@ export namespace OkcoinMessage{
       bb.symbol=product
       bb.bid_price=msg['ticker']['buy']
       bb.ask_price=msg['ticker']['sell']
+      if (bb.bid_price) {
+        return bb;
+      }
+      else{
+        return null;
+      }
       
-      return bb;
     }
   }
   /**
@@ -112,8 +127,13 @@ export namespace OkcoinMessage{
       ticker.high=msg['ticker']['high']
       ticker.low=msg['ticker']['low']
       ticker.volume=msg['ticker']['vol']
-      
-      return ticker;
+      if (ticker.bid_price) {
+        return ticker;
+      }
+      else{
+        return null;
+      }
+
     }
   }
 
@@ -135,10 +155,18 @@ export namespace OkcoinMessage{
         trade.size= m['amount']
         trade.side=  m['type']=='sell'? 'S' : 'B';
         trade.time= m['date_ms']
-
-        trades.push(trade)
+        if (trade.price) {
+          trades.push(trade)
+        }
+        
       }
-      return trades
+      if (trades.length > 0) {
+        return trades;
+      }
+      else{
+        return null;
+      }
+      
       
     }
   }
@@ -165,11 +193,18 @@ export namespace OkcoinMessage{
            rate.low= m[3] 
            rate.close= m[4]
            rate.volume= m[5]
-           
-           rates.push(rate)
+           if (rate.open) {
+            rates.push(rate)
+           } 
            
       }
-      return rates;
+      if (rates.length > 0) {
+        return rates;
+      }
+      else{
+        return null;
+      }
+      
     }
   }
   export class Change {

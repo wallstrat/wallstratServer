@@ -121,7 +121,7 @@ export class MarketPublicFeed {
       return (this.marketFeed.createToken(market).decode(tokenList));
     }
     else{
-        
+        return null;
     }
 
   }
@@ -132,7 +132,7 @@ export class MarketPublicFeed {
       return (this.marketFeed.createToken(market).decode(tokenList));
     }
     else{
-        
+        return null;
     }
 
   }
@@ -143,7 +143,7 @@ export class MarketPublicFeed {
       return (this.marketFeed.createProductPair(market).decode(quoteList));
     }
     else{
-        
+        return null;
     }
 
   }
@@ -154,57 +154,73 @@ export class MarketPublicFeed {
       return (this.marketFeed.createProductPair(market).decode(quoteList));
     }
     else{
-        
+        return null;
     }
 
   }
   getTokenInfo(market:ExchangeCodes){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getCurrencies().then( function(response){ 
+        try{
             response = JSON.parse(String(response));
             // console.log(JSON.stringify(this.marketFeed.createTokenInfo(market).decode(response)))
             return (this.marketFeed.createTokenInfo(market).decode(response));
-          }.bind(this))
-          .catch(function(error){
-            console.log(error)
-            return error;
+          }catch(e){
+            return null;
+          }
+            
+        }.bind(this))
+      .catch(function(error){
+        // console.log(error)
+        return null;
       });
     }
     else{
-        
+        return null;
     }
 
   }
   getProductPairInfo(market:ExchangeCodes){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getProducts().then( function(response){ 
+          try{
             response = JSON.parse(String(response));
             // console.log(JSON.stringify(this.marketFeed.createProductPairInfo(market).decode(response)))
             return (this.marketFeed.createProductPairInfo(market).decode(response));
-          }.bind(this))
-          .catch(function(error){
-            console.log(error)
-            return error;
+          }
+          catch(e){
+            return null;
+          }
+        }.bind(this))
+      .catch(function(error){
+        // console.log(error)
+        return null;
       });
     }
     else{
-        
+        return null;
     }
   }
   getOrderBook(market:ExchangeCodes, parameters_:any){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getOrderBook(parameters_).then( function(response){ 
+          try{
             response = JSON.parse(String(response));
             // console.log(JSON.stringify(this.marketFeed.createQuoteMessage(market).decode(response, parameters_.productID)))
             return (this.marketFeed.createQuoteMessage(market).decode(response, parameters_.productID));
-          }.bind(this))
-          .catch(function(error){
-            console.log(error)
-            return error;
+          }
+          catch(e){
+            return null;
+          }
+          
+        }.bind(this))
+      .catch(function(error){
+        // console.log(error)
+        return null;
       });
     }
     else{
-        
+        return null;
     }
   }
   /**
@@ -213,66 +229,88 @@ export class MarketPublicFeed {
   getBestBidBestAsk(market:ExchangeCodes, parameters_:any){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getTicker(parameters_).then( function(response){ 
-        response = JSON.parse(String(response));
-        // console.log(JSON.stringify(this.marketFeed.createBestBidBestAskMessage(market).decode(response, parameters_.productID)))
-        return (this.marketFeed.createBestBidBestAskMessage(market).decode(response, parameters_.productID));
+        try{
+            response = JSON.parse(String(response));
+            // console.log(JSON.stringify(this.marketFeed.createBestBidBestAskMessage(market).decode(response, parameters_.productID)))
+            return (this.marketFeed.createBestBidBestAskMessage(market).decode(response, parameters_.productID));
+          }catch(e){
+            return null;
+          }
+        
         }.bind(this))
         .catch(function(error){
-          console.log(error)
-          return error;
+          // console.log(error)
+          return null;
       });
     }
     else{
-        
+        return null;
     }
   }
 
   getTicker(market:ExchangeCodes, parameters_:any){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getTicker(parameters_).then( function(response){ 
+        try{
            response = JSON.parse(String(response));
            // console.log(JSON.stringify(this.marketFeed.createTickerMessage(market).decode(response, parameters_.productID)))
            return (this.marketFeed.createTickerMessage(market).decode(response, parameters_.productID));
-          }.bind(this))
-          .catch(function(error){
-            console.log(error)
-            return error;
+          }
+          catch(e){
+            return null;
+          }
+        }.bind(this))
+      .catch(function(error){
+        // console.log(error)
+        return null;
       });
     }
     else{
-        
+        return null;
     }
   }
   getAllTrades(market:ExchangeCodes, parameters_:any){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getAllTrades(parameters_).then( function(response){ 
-           response = JSON.parse(String(response));
+        try{
+          response = JSON.parse(String(response));
            // console.log(JSON.stringify(this.marketFeed.createTradeMessage(market).decode(response, parameters_.productID)))
-           return (this.marketFeed.createTradeMessage(market).decode(response, parameters_.productID));
-          }.bind(this))
-          .catch(function(error){
-            console.log(error)
-            return error;
+          return (this.marketFeed.createTradeMessage(market).decode(response, parameters_.productID));
+
+        }
+        catch(e){
+          return null;
+        }
+           
+        }.bind(this))
+      .catch(function(error){
+        // console.log(error)
+        return error;
       });
     }
     else{
-        
+        return null;
     }
   }
   getHistoricRates(market:ExchangeCodes, parameters_:any){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getHistoricRates(parameters_).then( function(response){ 
+        try{
             response = JSON.parse(String(response));
             // console.log(this.marketFeed.createRates(market).decode(response, parameters_.productID))
             return (this.marketFeed.createRates(market).decode(response, parameters_.productID));
+          }catch(e){
+            return null;
+          }
+            
           }.bind(this))
           .catch(function(error){
-            console.log(error)
-            return error;
+            // console.log(error)
+            return null;
       });
     }
     else{
-        
+        return null;
     }
   }
   getMarketFeed(market:ExchangeCodes){
@@ -281,17 +319,23 @@ export class MarketPublicFeed {
   getChange(market:ExchangeCodes, parameters_:any){
     if(this.containers.has(market) || market in this.containers){
       return this.containers.get(market).getChange(parameters_).then( function(response){ 
-            response = JSON.parse(String(response));
-            // console.log(this.marketFeed.createChangeMessage(market).decode(response, parameters_.productID))
-            return (this.marketFeed.createChangeMessage(market).decode(response, parameters_.productID));
-          }.bind(this))
-          .catch(function(error){
-            console.log(error)
-            return error;
+        try{
+          response = JSON.parse(String(response));
+          // console.log(this.marketFeed.createChangeMessage(market).decode(response, parameters_.productID))
+          return (this.marketFeed.createChangeMessage(market).decode(response, parameters_.productID));
+        }
+        catch(e){
+          return null;
+        }
+            
+        }.bind(this))
+      .catch(function(error){
+        // console.log(error)
+          return null;
       });
     }
     else{
-        
+        return null;
     }
   }
 

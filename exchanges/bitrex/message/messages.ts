@@ -93,8 +93,10 @@ export namespace BitrexMessage{
         msgbid.size=bid['Quantity'];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg['result']["sell"]){
         let msgask =new QuoteMessage();
@@ -102,10 +104,16 @@ export namespace BitrexMessage{
         msgask.size=ask['Quantity'];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if(msgask.price){
+           priceBook.push(msgask);
+        }
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook;
+      }
+      else{
+        return null;
+      }
     }
   }
    /**
@@ -121,8 +129,13 @@ export namespace BitrexMessage{
       bb.symbol=product
       bb.bid_price=msg['result']['Bid']
       bb.ask_price=msg['result']['Ask']
+      if(bb.bid_price){
+        return bb;
+      }
+      else{
+        return null;
+      }
       
-      return bb;
     }
   }
   /**
@@ -141,8 +154,13 @@ export namespace BitrexMessage{
       ticker.bid_price=msg['result']['Bid']
       ticker.ask_price=msg['result']['Ask']
       ticker.last_trade_price=msg['result']['Last']
+      if(ticker.bid_price){
+        return ticker
+      }
+      else{
+        return null;
+      }
 
-      return ticker;
     }
   }
 
@@ -166,9 +184,17 @@ export namespace BitrexMessage{
         trade.side= m['OrderType'] == 'BUY' ? 'B' : 'S';
         trade.price= m['Price']
         trade.fill_type= m['FillType']
-        trades.push(trade)
+        if(trade.price){
+          trades.push(trade)
+        }
+        
       }
-      return trades
+      if(trades.length > 0){
+        return trades;
+      }
+      else{
+        return  null;
+      }
       
     }
   }
@@ -204,11 +230,17 @@ export namespace BitrexMessage{
            rate.open_buy_order_24hr= m['OpenBuyOrders']
            rate.open_sell_order_24hr= m['OpenSellOrders']
            rate.prev_day_24hr= m['PrevDay']
-
-           rates.push(rate)
+           if(rate.high_24hr){
+            rates.push(rate)
+           }    
            
       }
-      return rates;
+      if(rates.length > 0){
+        return rates;
+      }
+      else{
+        return null;
+      }
     }
 
   }

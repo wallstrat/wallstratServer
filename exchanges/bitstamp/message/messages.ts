@@ -76,8 +76,10 @@ export namespace BitstampMessage{
         msgbid.size=bid[1];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["asks"]){
          // console.log(ask)
@@ -86,10 +88,17 @@ export namespace BitstampMessage{
         msgask.size=ask[1];
         msgask.side='S';
         msgask.symbol=product;
+        if(msgask.price){
+          priceBook.push(msgask);
+        }
 
-        priceBook.push(msgask);
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook;
+      }
+      else{
+        return null;
+      }
     }
   }
    /**
@@ -105,8 +114,15 @@ export namespace BitstampMessage{
       bb.symbol=product
       bb.bid_price=msg['bid']
       bb.ask_price=msg['ask']
+
+      if(bb.ask_price){
+         return bb;
+      }
+      else{
+        return null;
+      }
       
-      return bb;
+     
     }
   }
   /**
@@ -138,7 +154,13 @@ export namespace BitstampMessage{
       ticker.vwap=msg['vwap']
       ticker.time=msg['timestamp']
 
-      return ticker;
+      if(ticker.bid_price){
+        return ticker;
+      }
+      else{
+        return null;
+      }
+
     }
 }
 
@@ -160,9 +182,17 @@ export class TradeMessage {
       trade.size= m['amount']
       trade.price= m['price']
       trade.side = m['type'] == '0' ? 'B' :'S'
-      trades.push(trade)
+      if(trade.price){
+        trades.push(trade)
+      }
+      
     }
-    return trades
+    if(trades.length > 0){
+      return trades;
+    }
+    else{
+      return null;
+    }
       
     }
 }

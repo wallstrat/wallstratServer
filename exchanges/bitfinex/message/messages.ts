@@ -77,8 +77,10 @@ export namespace BitfinexMessage{
         msgbid.size=bid['amount'];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["asks"]){
          // console.log(ask)
@@ -87,10 +89,17 @@ export namespace BitfinexMessage{
         msgask.size=ask['amount'];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if(msgask.price){
+          priceBook.push(msgask);
+        }
+        
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook;
+      }
+      else{
+        return null;
+      }
     }
   }
    /**
@@ -106,8 +115,12 @@ export namespace BitfinexMessage{
       bb.symbol=product
       bb.bid_price=msg[0]
       bb.ask_price=msg[2]
-      
-      return bb;
+      if(bb.bid_price){
+        return bb;
+      }
+      else{
+        return null;
+      }
     }
   }
   /**
@@ -141,8 +154,13 @@ export namespace BitfinexMessage{
       ticker.volume=msg[7]
       ticker.high=msg[8]
       ticker.low=msg[9]
+      if(ticker.bid_price){
+        return ticker;
+      }
+      else{
+        return null;
+      }
 
-      return ticker;
     }
   }
 
@@ -163,10 +181,17 @@ export namespace BitfinexMessage{
         trade.time= m[1]
         trade.size= m[2]
         trade.price= m[3]
-
-        trades.push(trade)
+        if(trade.price){
+          trades.push(trade)
+        }
+        
       }
-      return trades
+      if(trades.length > 0){
+        return trades;
+      }
+      else{
+        return null;
+      }
       
     }
   }
@@ -192,10 +217,16 @@ export namespace BitfinexMessage{
            rate.high= m[3]
            rate.low= m[4]
            rate.volume= m[5]
-           rates.push(rate)
-           
+           if(rate.open){
+            rates.push(rate)
+           }
       }
-      return rates;
+      if(rates.length > 0){
+        return rates;
+      }
+      else{
+        return null;
+      }
     }
   }
   export class Change {

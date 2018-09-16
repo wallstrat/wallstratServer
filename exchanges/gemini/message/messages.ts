@@ -65,8 +65,10 @@ export namespace GeminiMessage{
         msgbid.size=bid['amount'];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["asks"]){
          // console.log(ask)
@@ -75,10 +77,18 @@ export namespace GeminiMessage{
         msgask.size=ask['amount'];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if(msgask.price){
+          priceBook.push(msgask);
+        }
+        
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook
+      }
+      else{
+        return null;
+      }
+      
     }
   }
    /**
@@ -94,8 +104,12 @@ export namespace GeminiMessage{
       bb.symbol=product
       bb.bid_price=msg['bid']
       bb.ask_price=msg['ask']
-      
-      return bb;
+      if(bb.bid_price){
+        return bb;
+      }
+      else{
+        return null;
+      }
     }
   }
   /**
@@ -121,8 +135,13 @@ export namespace GeminiMessage{
       ticker.ask_price=msg['ask']
       ticker.last_trade_price=msg['last']
       ticker.time=msg['volume']['timestamp']
+      if(ticker.bid_price){
+        return ticker;
+      }
+      else{
+        return null;
+      }
       
-      return ticker;
     }
 
   }
@@ -146,10 +165,18 @@ export namespace GeminiMessage{
         trade.size= m['amount']
         trade.side=  m['type']=='sell'? 'S' : 'B';
         trade.time= m['timestampms']
-
-        trades.push(trade)
+        if(trade.price){
+          trades.push(trade)
+        }
+        
       }
-      return trades
+      if(trades.length > 0){
+        return trades;
+      }
+      else{
+        return null;
+      }
+      
       
     }
   }

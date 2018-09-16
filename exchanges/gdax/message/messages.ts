@@ -75,7 +75,6 @@ export namespace GdaxMessage{
         product.base_max_size=m['base_min_size']
         product.quote_increment=m['base_max_size']
         product.quote_increment=m['quote_increment']
-
         products.push(product)
         // console.log(m['id'], m['base_currency'], m['quote_currency'], m['base_min_size'], m['base_max_size'], m['quote_increment'])
         
@@ -104,8 +103,10 @@ export namespace GdaxMessage{
         msgbid.num_orders=bid[2];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["asks"]){
          // console.log(ask)
@@ -115,10 +116,17 @@ export namespace GdaxMessage{
         msgask.num_orders=ask[2];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if(msgask.price){
+          priceBook.push(msgask);
+        }
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook
+      }
+      else{
+        return null;
+      }
+      
     }
 
   }
@@ -137,7 +145,12 @@ export namespace GdaxMessage{
       bb.bid_price=msg['bid']
       bb.ask_price=msg['ask']
       
-      return bb;
+      if(bb.bid_price){
+        return bb;
+      }
+      else{
+        return null;
+      }
     }
   }
   /**
@@ -164,7 +177,13 @@ export namespace GdaxMessage{
       ticker.ask_price=msg['ask']
       ticker.volume=msg['volume']
       ticker.time=msg['time']
-      return ticker;
+      if(ticker.last_trade_price){
+         return ticker;
+      }
+      else{
+        return null;
+      }
+
     }
   }
 
@@ -186,10 +205,17 @@ export namespace GdaxMessage{
            trade.size= m['size']
            trade.side= (m['side'] == 'buy' ? 'B' : 'S');
            trade.time= m['time']
-           trades.push(trade)
-
+           if(trade.price){
+             trades.push(trade)
+           } 
       }
-      return trades;
+      if(trades.length > 0){
+        return trades; 
+      }
+      else{
+        return null;
+      }
+      
     }
 
   }
@@ -214,11 +240,17 @@ export namespace GdaxMessage{
            rate.open= m[3]
            rate.close= m[4]
            rate.volume= m[5]
-           
-           rates.push(rate)
-           
+           if(rate.low){
+             rates.push(rate)
+           }                   
       }
-      return rates;
+      if(rates.length > 0){
+        return rates;
+      }
+      else{
+        return null;
+      }
+
     }
   }
   export class Change {
@@ -242,7 +274,12 @@ export namespace GdaxMessage{
       change.change_percentage = 100*(change.change_absolute/msg[msg.length-1][4])
 
       // console.log(msg[0][4], msg[msg.length-1][4])
-      return change;
+      if(change.change_absolute){
+        return change;
+      }
+      else{
+        return null;
+      }
     }
   }
 

@@ -70,8 +70,10 @@ export namespace KrakenMessage{
           msgbid.time=bid[2];
           msgbid.side='B';
           msgbid.symbol=product;
-
-          priceBook.push(msgbid);
+          if (msgbid.price) {
+            priceBook.push(msgbid);
+          }
+          
         }
         for(let ask of msg['result'][key]['asks']){
           // console.log(ask)
@@ -81,12 +83,20 @@ export namespace KrakenMessage{
           msgask.time=ask[2];
           // msgask.side='S';
           msgask.symbol=product;
-
-          priceBook.push(msgask);
+          if (msgask.price) {
+            priceBook.push(msgask);
+          }
+          
         }
         
       })
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook
+      }
+      else{
+        return null;
+      }
+      
     }
   }
    /**
@@ -104,9 +114,12 @@ export namespace KrakenMessage{
         bb.symbol=product
         bb.bid_price=msg['result'][key]['b'][0]
         bb.ask_price=msg['result'][key]['a'][0]
+        if(bb.ask_price){
+          return bb;
+        }
         
       })
-      return bb;
+      
       
     }
 
@@ -138,9 +151,15 @@ export namespace KrakenMessage{
         ticker.low=msg['result'][key]['l'][0]
         ticker.high=msg['result'][key]['h'][0]
         ticker.vwap=msg['result'][key]['p'][0]
+        if (ticker.last_trade_price) {
+          return ticker;
+        }
+        else{
+          return null;
+        }
         
       })
-      return ticker;
+      
       
     }
   }
@@ -168,7 +187,10 @@ export namespace KrakenMessage{
             trade.volume=m[1]
             trade.time=m[2]
             trade.side=m[3]
-            trades.push(trade)
+            if (trade.price) {
+              trades.push(trade)
+            }
+            
           }
         }
         else{
@@ -176,7 +198,10 @@ export namespace KrakenMessage{
         }
         
       })
-      return trades;
+      if (trades.length >0) {
+        return trades;
+      }
+      
     }
   }
 

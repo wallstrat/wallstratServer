@@ -2,7 +2,7 @@ import { PublicContainer } from '../../../market/marketdata'
 import Bottleneck from "bottleneck"
 const rateLimiter = new Bottleneck({
   maxConcurrent: 1, // jobs can be running at the same time
-  minTime: 500 // wait timem before launching another one
+  minTime: 1000 // wait timem before launching another one
 });
 
 export class KucoinPublic extends PublicContainer{

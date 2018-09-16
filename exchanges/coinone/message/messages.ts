@@ -65,8 +65,10 @@ export namespace CoinoneMessage{
         msgbid.size=bid['qty'];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["ask"]){
         let msgask =new QuoteMessage();
@@ -74,10 +76,17 @@ export namespace CoinoneMessage{
         msgask.size=ask['qty'];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if(msgask.price){
+          priceBook.push(msgask);
+        }
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook;
+      }
+      else{
+        return null;
+      }
+      
     }
   }
    /**
@@ -109,7 +118,7 @@ export namespace CoinoneMessage{
     yesterday_volume:number;
 
     decode(msg:any, product?:string){
-      console.log(msg)
+      // console.log(msg)
       let ticker =new TickerMessage();
     
       ticker.symbol=product
@@ -121,8 +130,14 @@ export namespace CoinoneMessage{
       ticker.high=msg['high']
       ticker.low=msg['low']
       ticker.yesterday_volume=msg['yesterday_volume']
-
-      return ticker;
+      
+      if(ticker.last){
+         return ticker;
+      }
+      else{
+        return null;
+      }
+     
     }
   }
   export class TradeMessage {
@@ -141,10 +156,17 @@ export namespace CoinoneMessage{
         trade.size= m['qty']
         trade.price= m['price']
         trade.side= m['is_ask'] == '1' ? 'S' : 'B';
-
-        trades.push(trade)
+        if(trade.price){
+          trades.push(trade)
+        }
+        
       }
-      return trades
+      if(trades.length > 0){
+        return trades
+      }
+      else{
+        return null;
+      }
       
     }
   }

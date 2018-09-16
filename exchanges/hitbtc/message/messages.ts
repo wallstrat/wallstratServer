@@ -94,8 +94,10 @@ export namespace HitbtcMessage{
         msgbid.size=bid['size'];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["ask"]){
          // console.log(ask)
@@ -104,10 +106,18 @@ export namespace HitbtcMessage{
         msgask.size=ask['size'];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if(msgask.price){
+          priceBook.push(msgask);
+        }
+        
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook
+      }
+      else{
+        return null;
+      }
+      
     }
   }
    /**
@@ -124,7 +134,13 @@ export namespace HitbtcMessage{
       bb.bid_price=msg['bid']
       bb.ask_price=msg['ask']
       
-      return bb;
+      if(bb.bid_price){
+        return bb;
+      }
+      else{
+        return null;
+      }
+      
     }
   }
   /**
@@ -156,8 +172,13 @@ export namespace HitbtcMessage{
       ticker.time=msg['timestamp']
       ticker.volume=msg['volume']
       ticker.volume_quote=msg['volumeQuote']
-      
-      return ticker;
+      if(ticker.bid_price){
+        return ticker
+      }
+      else{
+        return null;
+      }
+
     }
   }
   export class TradeMessage {
@@ -179,10 +200,18 @@ export namespace HitbtcMessage{
            trade.size= m['quantity']
            trade.side= (m['side'] == 'buy' ? 'B' : 'S');
            trade.time= m['timestamp']
-           trades.push(trade)
+           if(trade.price){
+            trades.push(trade)
+           }
 
       }
-      return trades;
+      if(trades.length > 0){
+        return trades;
+      }
+      else{
+        return null;
+      }
+      
     }
   }
   export class Rates {
@@ -207,11 +236,18 @@ export namespace HitbtcMessage{
            rate.close= m['close']
            rate.volume= m['volume']
            rate.volume_quote= m['volumeQuote']
+           if(rate.low){
+              rates.push(rate)
+           }
 
-           rates.push(rate)
-           
       }
-      return rates;
+      if(rates.length > 0){
+        return rates;
+      }
+      else{
+        return null;
+      }
+
     }
   }
 

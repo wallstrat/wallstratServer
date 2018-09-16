@@ -67,8 +67,14 @@ export namespace KucoinMessage{
       bb.symbol=product
       bb.bid_price=msg['bid']
       bb.ask_price=msg['ask']
+      if(bb.bid_price){
+        return bb;
+      }
+      else{
+        return null;
+      }
       
-      return bb;
+      
     }
   }
   /**

@@ -81,8 +81,10 @@ export namespace BinanceMessage{
         msgbid.size=bid[1];
         msgbid.side='B';
         msgbid.symbol=product;
-
-        priceBook.push(msgbid);
+        if(msgbid.price){
+          priceBook.push(msgbid);
+        }
+        
       }
       for(let ask of msg["asks"]){
          // console.log(ask)
@@ -91,10 +93,16 @@ export namespace BinanceMessage{
         msgask.size=ask[1];
         msgask.side='S';
         msgask.symbol=product;
-
-        priceBook.push(msgask);
+        if(msgask.price){
+          priceBook.push(msgask);
+        }
       }
-      return priceBook
+      if(priceBook.length > 0){
+        return priceBook
+      }
+      else{
+        return null;
+      }
     }
 
   }
@@ -112,7 +120,12 @@ export namespace BinanceMessage{
       bb.symbol=product
       bb.bid_price=msg['bidPrice']
       bb.ask_price=msg['askPrice']
-      return bb;
+      if(bb.bid_price){
+        return bb;
+      }
+      else{
+        return null;
+      }
     }
   }
   /**
@@ -133,8 +146,13 @@ export namespace BinanceMessage{
       ticker.ask_price=msg['askPrice']
       ticker.bid_size=msg['bidQty']
       ticker.ask_size=msg['askQty']
+      if(ticker.bid_price){
+        return ticker;
+      }
+      else{
+        return null;
+      }
       
-      return ticker;
     }
   }
 
@@ -160,10 +178,17 @@ export namespace BinanceMessage{
         trade.time= m['time']
         trade.isBuyerMaker= m['isBuyerMaker']
         trade.isBestMatch= m['isBestMatch']
-
-        trades.push(trade)
+        if(trade.price){
+          trades.push(trade)
+        }
+        
       }
-      return trades
+      if(trades.length > 0){
+        return trades;
+      }
+      else{
+        return null;
+      }
       
     }
   }
@@ -197,11 +222,17 @@ export namespace BinanceMessage{
            rate.trades_count= m[8]
            rate.taker_buy_base_asset_volume= m[9]
            rate.taker_buy_quote_asset_volume= m[10]
+           if(rate.open){
+            rates.push(rate)
+           }    
 
-           rates.push(rate)
-           
       }
-      return rates;
+      if(rates.length > 0){
+        return rates;
+      }
+      else{
+        return null;
+      }
     }
   }
 
@@ -212,12 +243,9 @@ export namespace BinanceMessage{
 
     decode(msg:any, product?:string){
       // console.log(msg)
-      
       for(let m of msg){
-           
-           
+               
       }
-     
     }
   }
 

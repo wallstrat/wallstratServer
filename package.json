@@ -10,7 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc -w",
     "start": "concurrently \"tsc -w\" \"nodemon dist/marketData/test/test.js\"",
-    "prepare": "concurrently \"tsc -w\" \"nodemon dist/marketData/test/test.js\"",
     "startServer": "node dist/marketData/test/test.js"
   },
   "dependencies": {
